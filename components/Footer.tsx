@@ -81,7 +81,7 @@ export function Footer() {
                 <dd>
                   <a
                     href={`tel:${contact.phone}`}
-                    className="text-brass-lift hover:text-text-hi"
+                    className="text-agri-lift hover:text-text-hi"
                   >
                     {contact.phoneDisplay}
                   </a>
@@ -93,7 +93,7 @@ export function Footer() {
                   <dd>
                     <a
                       href={`mailto:${e.address}`}
-                      className="break-all text-brass-lift hover:text-text-hi"
+                      className="break-all text-agri-lift hover:text-text-hi"
                     >
                       {e.address}
                     </a>
@@ -111,7 +111,7 @@ export function Footer() {
           <nav aria-label="Footer" className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
             {COLUMNS.map((col) => (
               <div key={col.title}>
-                <h2 className="font-display text-[0.7rem] font-semibold tracking-[0.14em] text-brass uppercase">
+                <h2 className="font-display text-[0.7rem] font-semibold tracking-[0.14em] text-agri uppercase">
                   {col.title}
                 </h2>
                 <ul className="mt-3 space-y-2">
@@ -134,7 +134,7 @@ export function Footer() {
 
         {/* Affiliations */}
         <div className="mt-12 border-t border-ink-600 pt-6">
-          <h2 className="font-display text-[0.7rem] font-semibold tracking-[0.14em] text-brass uppercase">
+          <h2 className="font-display text-[0.7rem] font-semibold tracking-[0.14em] text-agri uppercase">
             Affiliated to
           </h2>
           <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-2">
@@ -163,7 +163,7 @@ export function Footer() {
                   href={s.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-text-mid hover:text-brass-lift"
+                  className="text-sm text-text-mid hover:text-agri-lift"
                 >
                   {s.network}
                 </a>

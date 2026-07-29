@@ -47,7 +47,7 @@ export default function VenuePage() {
             <div>
               <Eyebrow>The seminar hall</Eyebrow>
               <p className="mt-4 flex items-baseline gap-3">
-                <span className="tnum font-display text-[clamp(2.4rem,7vw,3.8rem)] leading-none font-semibold text-brass-lift">
+                <span className="tnum font-display text-[clamp(2.4rem,7vw,3.8rem)] leading-none font-semibold text-agri-lift">
                   {hall.capacity}
                 </span>
                 <span className="text-sm tracking-wide text-text-lo uppercase">
@@ -59,7 +59,7 @@ export default function VenuePage() {
               <ul className="mt-7 space-y-3 border-t border-ink-600 pt-6">
                 {hall.facilities.map((f) => (
                   <li key={f} className="flex gap-3.5">
-                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-brass" />
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-agri" />
                     <span className="text-[0.95rem] leading-relaxed text-text-mid">{f}</span>
                   </li>
                 ))}
@@ -204,7 +204,7 @@ export default function VenuePage() {
               <p className="mt-4 text-sm">
                 <a
                   href="/gallery/"
-                  className="border-b border-brass/40 pb-0.5 text-brass-lift hover:border-brass hover:text-text-hi"
+                  className="border-b border-agri/40 pb-0.5 text-agri-lift hover:border-agri hover:text-text-hi"
                 >
                   All photographs of the building
                 </a>

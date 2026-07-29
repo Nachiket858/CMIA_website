@@ -26,7 +26,7 @@ export default function ResourcesPage() {
           <div className="space-y-14">
             {resources.groups.map((group) => (
               <section key={group.id} id={group.id}>
-                <div className="border-b border-brass/30 pb-3">
+                <div className="border-b border-agri/30 pb-3">
                   <h2 className="font-display text-[1.35rem] font-semibold text-text-hi">
                     {group.title}
                   </h2>
@@ -46,7 +46,7 @@ export default function ResourcesPage() {
                           <span className="block text-[0.97rem] leading-snug text-text-hi">
                             {l.label}
                             {"affiliated" in l && l.affiliated && (
-                              <span className="ml-2 align-middle bg-brass px-1.5 py-0.5 text-[0.58rem] font-semibold tracking-[0.08em] text-ink-900 uppercase">
+                              <span className="ml-2 align-middle bg-agri px-1.5 py-0.5 text-[0.58rem] font-semibold tracking-[0.08em] text-ink-900 uppercase">
                                 affiliated
                               </span>
                             )}
@@ -57,7 +57,7 @@ export default function ResourcesPage() {
                             </span>
                           )}
                         </span>
-                        <span aria-hidden="true" className="shrink-0 pt-0.5 text-brass">
+                        <span aria-hidden="true" className="shrink-0 pt-0.5 text-agri">
                           ↗
                         </span>
                       </a>
@@ -92,7 +92,7 @@ export default function ResourcesPage() {
               Spotted a broken link? Tell the office at{" "}
               <a
                 href={`mailto:${site.contact.emails[1].address}`}
-                className="text-brass-lift underline"
+                className="text-agri-lift underline"
               >
                 {site.contact.emails[1].address}
               </a>

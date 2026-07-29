@@ -108,7 +108,7 @@ export default function MembershipPage() {
                 ].map((step, i) => (
                   <li key={step.t} className="flex gap-4">
                     {/* A genuine sequence, so it is genuinely numbered. */}
-                    <span className="tnum mt-0.5 shrink-0 font-display text-sm font-semibold text-brass">
+                    <span className="tnum mt-0.5 shrink-0 font-display text-sm font-semibold text-agri">
                       {i + 1}
                     </span>
                     <div className="border-l border-ink-600 pl-4">

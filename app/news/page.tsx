@@ -26,10 +26,10 @@ export default function NewsPage() {
               const items = news.items.filter((i) => i.type === type.id);
               return (
                 <section key={type.id} id={type.id}>
-                  <div className="flex items-start gap-4 border-b border-brass/30 pb-4">
+                  <div className="flex items-start gap-4 border-b border-agri/30 pb-4">
                     <Pictogram
                       name={type.pictogram as PictogramName}
-                      className="mt-0.5 h-7 w-7 shrink-0 text-brass"
+                      className="mt-0.5 h-7 w-7 shrink-0 text-agri"
                     />
                     <div className="flex-1">
                       <h2 className="font-display text-[1.35rem] font-semibold text-text-hi">
@@ -71,7 +71,7 @@ export default function NewsPage() {
                                     href={href}
                                     target={external ? "_blank" : undefined}
                                     rel={external ? "noopener noreferrer" : undefined}
-                                    className="inline-flex items-center gap-2 border border-brass/40 px-4 py-2.5 text-sm font-medium text-brass-lift transition-colors hover:border-brass hover:text-text-hi"
+                                    className="inline-flex items-center gap-2 border border-agri/40 px-4 py-2.5 text-sm font-medium text-agri-lift transition-colors hover:border-agri hover:text-text-hi"
                                   >
                                     Download {external && <span aria-hidden="true">↗</span>}
                                   </a>

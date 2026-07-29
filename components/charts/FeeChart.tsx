@@ -172,7 +172,7 @@ export function TenureChart() {
       <div className="mb-5">
         <label
           htmlFor="fee-class"
-          className="block text-xs font-medium tracking-wide text-brass uppercase"
+          className="block text-xs font-medium tracking-wide text-agri uppercase"
         >
           Class of membership
         </label>

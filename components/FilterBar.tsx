@@ -41,7 +41,7 @@ export function FilterBar({
             className={`pressable shrink-0 rounded-sm border px-3.5 py-2 text-sm transition-[background-color,border-color,color,box-shadow] duration-200 ease-[var(--ease-out-expo)] ${
               on
                 ? "border-signal bg-signal font-semibold text-ink-900 shadow-[var(--shadow-sm)]"
-                : "border-ink-500 text-text-mid hover:border-brass/50 hover:bg-ink-600/50 hover:text-text-hi"
+                : "border-ink-500 text-text-mid hover:border-agri/50 hover:bg-ink-600/50 hover:text-text-hi"
             }`}
           >
             {o.label}

@@ -42,7 +42,7 @@ export function PersonCard({
     <figure className="group">
       <PhotoFrame
         ratio="3/4"
-        className="gable-cut border border-ink-500 transition-colors duration-300 group-hover:border-brass/45"
+        className="gable-cut border border-ink-500 transition-colors duration-300 group-hover:border-agri/45"
       >
         {showPhoto ? (
           <Picture
@@ -60,14 +60,14 @@ export function PersonCard({
             className="flex h-full w-full items-center justify-center bg-ink-600"
             aria-hidden="true"
           >
-            <span className="font-display text-3xl font-semibold text-clay transition-colors duration-300 group-hover:text-brass">
+            <span className="font-display text-3xl font-semibold text-clay transition-colors duration-300 group-hover:text-agri">
               {initials(person.name)}
             </span>
           </div>
         )}
 
-        {/* A brass hairline along the base ties the grid together. */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-brass/35" />
+        {/* An agri hairline along the base ties the grid together. */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-agri/35" />
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-ink-900/45 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -90,7 +90,7 @@ export function PersonCard({
         </p>
         <p
           className={`mt-1 leading-snug ${
-            person.isCoChair ? "text-text-lo" : "text-brass"
+            person.isCoChair ? "text-text-lo" : "text-agri"
           } ${lead ? "text-sm" : "text-[0.8rem]"}`}
         >
           {person.role}

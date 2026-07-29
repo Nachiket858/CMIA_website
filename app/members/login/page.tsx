@@ -29,7 +29,7 @@ export default function MemberLoginPage() {
       <Section tight>
         <Container>
           <div className="max-w-2xl">
-            <div className="gable-cut-lg border border-brass/25 bg-ink-900 p-6 shadow-[var(--shadow-lg)] sm:p-8">
+            <div className="gable-cut-lg border border-agri/25 bg-ink-900 p-6 shadow-[var(--shadow-lg)] sm:p-8">
               <Eyebrow>What you were probably looking for</Eyebrow>
               <ul className="mt-5 space-y-5">
                 <li>
@@ -69,13 +69,13 @@ export default function MemberLoginPage() {
 
               <p className="mt-7 border-t border-ink-600 pt-5 text-sm leading-relaxed text-text-lo">
                 Call{" "}
-                <a href={`tel:${site.contact.phone}`} className="text-brass-lift">
+                <a href={`tel:${site.contact.phone}`} className="text-agri-lift">
                   {site.contact.phoneDisplay}
                 </a>{" "}
                 during {site.contact.hours}, or email{" "}
                 <a
                   href={`mailto:${site.contact.emails[1].address}`}
-                  className="break-all text-brass-lift"
+                  className="break-all text-agri-lift"
                 >
                   {site.contact.emails[1].address}
                 </a>

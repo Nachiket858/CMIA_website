@@ -53,7 +53,7 @@ export default function TrainingPage() {
             </Panel>
 
             <div className="surface gable-cut p-6 sm:p-8">
-              <h2 className="font-display text-[0.7rem] font-semibold tracking-[0.14em] text-brass uppercase">
+              <h2 className="font-display text-[0.7rem] font-semibold tracking-[0.14em] text-agri uppercase">
                 For students and young people
               </h2>
               <p className="mt-4 text-[1.02rem] leading-relaxed text-text-mid">
@@ -125,7 +125,7 @@ export default function TrainingPage() {
             ))}
           </ul>
 
-          <div className="mt-10 max-w-2xl border-l border-brass/30 pl-5">
+          <div className="mt-10 max-w-2xl border-l border-agri/30 pl-5">
             <Eyebrow>A note</Eyebrow>
             <p className="mt-2.5 text-sm leading-relaxed text-text-lo">
               The chamber&rsquo;s old Training Programme page listed no scheduled programmes.

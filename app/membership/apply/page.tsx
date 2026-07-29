@@ -50,8 +50,8 @@ export default function ApplyPage() {
 
               <div className="surface gable-cut p-6">
                 <div className="flex items-center gap-3">
-                  <Pictogram name="publication" className="h-6 w-6 text-brass" />
-                  <h2 className="font-display text-[0.7rem] font-semibold tracking-[0.14em] text-brass uppercase">
+                  <Pictogram name="publication" className="h-6 w-6 text-agri" />
+                  <h2 className="font-display text-[0.7rem] font-semibold tracking-[0.14em] text-agri uppercase">
                     The form itself
                   </h2>
                 </div>
@@ -67,7 +67,7 @@ export default function ApplyPage() {
               </div>
 
               <div className="surface gable-cut p-6">
-                <h2 className="font-display text-[0.7rem] font-semibold tracking-[0.14em] text-brass uppercase">
+                <h2 className="font-display text-[0.7rem] font-semibold tracking-[0.14em] text-agri uppercase">
                   Paying the fee
                 </h2>
                 <p className="mt-3 text-sm text-text-mid">
@@ -94,20 +94,20 @@ export default function ApplyPage() {
                   {bank.notifyPhones.map((p, i) => (
                     <span key={p}>
                       {i > 0 && " or "}
-                      <a href={`tel:${p}`} className="text-brass-lift">
+                      <a href={`tel:${p}`} className="text-agri-lift">
                         {p}
                       </a>
                     </span>
                   ))}
                   , or email{" "}
-                  <a href={`mailto:${bank.notifyEmail}`} className="break-all text-brass-lift">
+                  <a href={`mailto:${bank.notifyEmail}`} className="break-all text-agri-lift">
                     {bank.notifyEmail}
                   </a>
                   .
                 </p>
               </div>
 
-              <div className="border-l border-brass/30 pl-5">
+              <div className="border-l border-agri/30 pl-5">
                 <Eyebrow>Prefer to walk in?</Eyebrow>
                 <address className="mt-3 text-sm leading-relaxed text-text-mid not-italic">
                   {site.address.line1}, {site.address.line2}
@@ -120,7 +120,7 @@ export default function ApplyPage() {
                 <p className="mt-2 text-sm">
                   <a
                     href={`tel:${site.contact.phone}`}
-                    className="text-brass-lift hover:text-text-hi"
+                    className="text-agri-lift hover:text-text-hi"
                   >
                     {site.contact.phoneDisplay}
                   </a>

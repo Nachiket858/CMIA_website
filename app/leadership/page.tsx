@@ -115,8 +115,8 @@ export default function LeadershipPage() {
             <ul className="mt-10 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
               {pairs(group).map((row, i) => (
                 <Reveal as="li" key={row.group} delay={i * 70}>
-                  <div className="border-t border-brass/30 pt-5">
-                    <h3 className="font-display text-[0.72rem] font-semibold tracking-[0.12em] text-brass uppercase">
+                  <div className="border-t border-agri/30 pt-5">
+                    <h3 className="font-display text-[0.72rem] font-semibold tracking-[0.12em] text-agri uppercase">
                       {(row.head?.role ?? row.co?.role ?? "").replace(
                         /^(Zone Head|Head|Co-Chair)\s*—?\s*/,
                         "",
@@ -141,19 +141,19 @@ export default function LeadershipPage() {
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {officeBearers.secretariat.map((s) => (
               <li key={s.name} className="surface gable-cut p-5">
-                <p className="font-display text-[0.72rem] font-semibold tracking-[0.12em] text-brass uppercase">
+                <p className="font-display text-[0.72rem] font-semibold tracking-[0.12em] text-agri uppercase">
                   {s.name}
                 </p>
                 <p className="mt-3 text-[1.02rem] font-semibold text-text-hi">{s.contactName}</p>
                 <p className="mt-2 text-sm">
-                  <a href={`tel:${s.phone}`} className="text-brass-lift hover:text-text-hi">
+                  <a href={`tel:${s.phone}`} className="text-agri-lift hover:text-text-hi">
                     {s.phone}
                   </a>
                 </p>
                 <p className="mt-1 text-sm">
                   <a
                     href={`mailto:${s.email}`}
-                    className="break-all text-brass-lift hover:text-text-hi"
+                    className="break-all text-agri-lift hover:text-text-hi"
                   >
                     {s.email}
                   </a>
@@ -161,7 +161,7 @@ export default function LeadershipPage() {
               </li>
             ))}
             <li className="surface gable-cut p-5">
-              <p className="font-display text-[0.72rem] font-semibold tracking-[0.12em] text-brass uppercase">
+              <p className="font-display text-[0.72rem] font-semibold tracking-[0.12em] text-agri uppercase">
                 The office
               </p>
               <p className="mt-3 text-[1.02rem] font-semibold text-text-hi">
@@ -170,7 +170,7 @@ export default function LeadershipPage() {
               <p className="mt-2 text-sm">
                 <a
                   href={`tel:${site.contact.phone}`}
-                  className="text-brass-lift hover:text-text-hi"
+                  className="text-agri-lift hover:text-text-hi"
                 >
                   {site.contact.phoneDisplay}
                 </a>

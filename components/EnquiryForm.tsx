@@ -107,7 +107,7 @@ export function EnquiryForm() {
         <h2 className="mt-4 font-display text-xl font-semibold text-text-hi">Sent.</h2>
         <p className="mt-3 leading-relaxed text-text-mid">
           The office will reply. If it is urgent, call{" "}
-          <a href={`tel:${site.contact.phone}`} className="link-underline text-brass-lift">
+          <a href={`tel:${site.contact.phone}`} className="link-underline text-agri-lift">
             {site.contact.phoneDisplay}
           </a>{" "}
           during {site.contact.hours}.
@@ -116,7 +116,7 @@ export function EnquiryForm() {
     );
   }
 
-  const label = "block text-[0.82rem] font-medium tracking-wide text-brass uppercase";
+  const label = "block text-[0.82rem] font-medium tracking-wide text-agri uppercase";
   const err = (k: keyof Fields) => (attempted ? errors[k] : undefined);
 
   const Err = ({ k }: { k: keyof Fields }) => {
@@ -282,12 +282,12 @@ export function EnquiryForm() {
               Please email{" "}
               <a
                 href={`mailto:${site.contact.emails[1].address}`}
-                className="link-underline text-brass-lift"
+                className="link-underline text-agri-lift"
               >
                 {site.contact.emails[1].address}
               </a>{" "}
               or call{" "}
-              <a href={`tel:${site.contact.phone}`} className="link-underline text-brass-lift">
+              <a href={`tel:${site.contact.phone}`} className="link-underline text-agri-lift">
                 {site.contact.phoneDisplay}
               </a>{" "}
               during {site.contact.hours}.

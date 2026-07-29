@@ -24,7 +24,7 @@ const PICTOGRAM: Record<string, string> = {
  * caption rather than implying survey accuracy.
  *
  * Deliberately no colour encoding: seven categories cannot be told apart by hue
- * safely (the palette caps at two), so every mark is brass and carries its own
+ * safely (the palette caps at two), so every mark is agri and carries its own
  * label. Colour does no work here and is not asked to.
  */
 export function ClusterMap() {
@@ -106,7 +106,7 @@ export function ClusterMap() {
                     cx={c.x}
                     cy={c.y}
                     r={on ? 4.2 : 3.4}
-                    fill={on ? "var(--color-signal)" : "var(--color-brass)"}
+                    fill={on ? "var(--color-signal)" : "var(--color-agri)"}
                     stroke="var(--color-ink-900)"
                     strokeWidth="0.7"
                     className="transition-all duration-300 ease-[var(--ease-out-expo)]"
@@ -158,7 +158,7 @@ export function ClusterMap() {
                   <span
                     aria-hidden="true"
                     className={`tnum mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-[3px] text-[0.68rem] font-bold transition-[background-color,transform] duration-300 ease-[var(--ease-out-expo)] ${
-                      on ? "scale-110 bg-signal text-ink-900" : "bg-brass text-ink-900"
+                      on ? "scale-110 bg-signal text-ink-900" : "bg-agri text-ink-900"
                     }`}
                   >
                     {i + 1}
@@ -166,7 +166,7 @@ export function ClusterMap() {
                   <Pictogram
                     name={PICTOGRAM[c.id] ?? "shed"}
                     className={`mt-0.5 h-5 w-5 shrink-0 transition-colors duration-200 ${
-                      on ? "text-signal" : "text-brass"
+                      on ? "text-signal" : "text-agri"
                     }`}
                   />
                   <span className="min-w-0 flex-1">

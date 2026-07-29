@@ -39,7 +39,7 @@ export default function WhatWeDoPage() {
               <div className={si % 2 === 1 ? "lg:order-2" : ""}>
                 <Pictogram
                   name={strand.pictogram as PictogramName}
-                  className="h-10 w-10 text-brass"
+                  className="h-10 w-10 text-agri"
                 />
                 <h2 className="mt-5 text-[clamp(1.7rem,5vw,2.8rem)] leading-tight font-semibold">
                   {strand.title}

@@ -55,7 +55,7 @@ export default function AboutPage() {
                       imgClassName="max-h-14 w-auto"
                     />
                   </div>
-                  <p className="tnum mt-5 font-display text-sm font-semibold text-brass">
+                  <p className="tnum mt-5 font-display text-sm font-semibold text-agri">
                     {era.from}
                     {era.to ? `–${era.to}` : " – today"}
                   </p>
@@ -90,7 +90,7 @@ export default function AboutPage() {
               <ul className="mt-7 space-y-4">
                 {site.positioning.map((p) => (
                   <li key={p} className="flex gap-3.5">
-                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-brass" />
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-agri" />
                     <span className="text-[0.97rem] leading-relaxed text-text-mid">{p}</span>
                   </li>
                 ))}
@@ -160,11 +160,11 @@ export default function AboutPage() {
                       rel="noopener noreferrer"
                       className="flex items-baseline gap-3 py-4 transition-colors hover:text-text-hi"
                     >
-                      <span className="font-display text-base font-semibold text-brass-lift">
+                      <span className="font-display text-base font-semibold text-agri-lift">
                         {a.abbr}
                       </span>
                       <span className="flex-1 text-sm text-text-mid">{a.name}</span>
-                      <span aria-hidden="true" className="text-brass">
+                      <span aria-hidden="true" className="text-agri">
                         ↗
                       </span>
                     </a>
@@ -222,7 +222,7 @@ export default function AboutPage() {
               { k: "PAN", v: site.registration.pan },
             ].map((r) => (
               <div key={r.k}>
-                <dt className="text-[0.72rem] tracking-[0.1em] text-brass uppercase">{r.k}</dt>
+                <dt className="text-[0.72rem] tracking-[0.1em] text-agri uppercase">{r.k}</dt>
                 <dd className="tnum mt-1.5 text-sm break-all text-text-hi">{r.v}</dd>
               </div>
             ))}
@@ -253,7 +253,7 @@ export default function AboutPage() {
             <Link
               href="/membership/"
               prefetch={false}
-              className="inline-flex items-center gap-2 border-b border-brass/40 pb-1 text-sm font-medium text-brass-lift hover:border-brass hover:text-text-hi"
+              className="inline-flex items-center gap-2 border-b border-agri/40 pb-1 text-sm font-medium text-agri-lift hover:border-agri hover:text-text-hi"
             >
               How to join <span aria-hidden="true">→</span>
             </Link>

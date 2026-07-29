@@ -166,7 +166,7 @@ export function ApplyForm() {
         </p>
         <p className="mt-4 text-sm text-text-lo">
           If you would rather move faster, call{" "}
-          <a href={`tel:${site.contact.phone}`} className="link-underline text-brass-lift">
+          <a href={`tel:${site.contact.phone}`} className="link-underline text-agri-lift">
             {site.contact.phoneDisplay}
           </a>
           .
@@ -175,7 +175,7 @@ export function ApplyForm() {
     );
   }
 
-  const label = "block text-[0.82rem] font-medium tracking-wide text-brass uppercase";
+  const label = "block text-[0.82rem] font-medium tracking-wide text-agri uppercase";
 
   const err = (k: keyof Fields) => (attempted || touched[k] ? errors[k] : undefined);
 
@@ -319,7 +319,7 @@ export function ApplyForm() {
           {firstYear && (
             <p
               key={chosenClass?.id}
-              className="tnum sheet-in mt-2.5 border-l-2 border-brass/40 pl-3 text-sm text-text-mid"
+              className="tnum sheet-in mt-2.5 border-l-2 border-agri/40 pl-3 text-sm text-text-mid"
             >
               First year: {rupees(firstYear.base)} + {rupees(firstYear.gst)} GST ={" "}
               <span className="font-semibold text-text-hi">{rupees(firstYear.total)}</span>
@@ -441,14 +441,14 @@ export function ApplyForm() {
                 Email{" "}
                 <a
                   href={`mailto:${site.contact.emails[1].address}?subject=Membership enquiry`}
-                  className="link-underline text-brass-lift"
+                  className="link-underline text-agri-lift"
                 >
                   {site.contact.emails[1].address}
                 </a>
               </li>
               <li>
                 Call{" "}
-                <a href={`tel:${site.contact.phone}`} className="link-underline text-brass-lift">
+                <a href={`tel:${site.contact.phone}`} className="link-underline text-agri-lift">
                   {site.contact.phoneDisplay}
                 </a>{" "}
                 <span className="text-text-lo">({site.contact.hours})</span>
@@ -458,7 +458,7 @@ export function ApplyForm() {
                   href={membership.formPdfSource}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="link-underline text-brass-lift"
+                  className="link-underline text-agri-lift"
                 >
                   Download the application form
                 </a>{" "}

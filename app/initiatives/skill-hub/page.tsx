@@ -26,7 +26,7 @@ export default function SkillHubPage() {
           { value: String(hub.gallery.length), label: "programmes recorded" },
         ]}
       >
-        <blockquote className="mt-9 border-l-2 border-brass pl-5">
+        <blockquote className="mt-9 border-l-2 border-agri pl-5">
           <p className="measure font-display text-[clamp(1.1rem,2.8vw,1.45rem)] leading-snug font-semibold text-text-hi">
             &ldquo;{hub.quote}&rdquo;
           </p>
@@ -40,10 +40,10 @@ export default function SkillHubPage() {
           <ul className="mt-10 grid gap-x-8 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
             {hub.facilities.map((f, i) => (
               <Reveal as="li" key={f.title} delay={i * 60}>
-                <div className="border-t border-brass/30 pt-5">
+                <div className="border-t border-agri/30 pt-5">
                   <Pictogram
                     name={f.pictogram as PictogramName}
-                    className="h-7 w-7 text-brass"
+                    className="h-7 w-7 text-agri"
                   />
                   <h3 className="mt-4 font-display text-[1.05rem] font-semibold text-text-hi">
                     {f.title}
@@ -67,7 +67,7 @@ export default function SkillHubPage() {
               <ul className="mt-7 space-y-4">
                 {hub.structure.map((s) => (
                   <li key={s.slice(0, 20)} className="flex gap-3.5">
-                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-brass" />
+                    <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-agri" />
                     <span className="text-[0.97rem] leading-relaxed text-text-mid">{s}</span>
                   </li>
                 ))}
@@ -89,7 +89,7 @@ export default function SkillHubPage() {
                 <p className="mt-3 text-sm">
                   <a
                     href={`tel:${hub.contact.phone}`}
-                    className="text-brass-lift hover:text-text-hi"
+                    className="text-agri-lift hover:text-text-hi"
                   >
                     {hub.contact.phone}
                   </a>
@@ -97,7 +97,7 @@ export default function SkillHubPage() {
                 <p className="mt-1 text-sm">
                   <a
                     href={`mailto:${hub.contact.email}`}
-                    className="break-all text-brass-lift hover:text-text-hi"
+                    className="break-all text-agri-lift hover:text-text-hi"
                   >
                     {hub.contact.email}
                   </a>

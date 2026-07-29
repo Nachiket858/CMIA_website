@@ -43,7 +43,7 @@ export default function InitiativesPage() {
                 <h2 className="mt-4 text-[clamp(1.7rem,4.8vw,2.6rem)] leading-tight font-semibold">
                   {strive.title}
                 </h2>
-                <p className="mt-2 text-[1.02rem] text-brass-lift">{strive.subtitle}</p>
+                <p className="mt-2 text-[1.02rem] text-agri-lift">{strive.subtitle}</p>
                 <p className="measure mt-5 leading-relaxed text-text-mid">{strive.summary}</p>
                 <p className="measure mt-3 leading-relaxed text-text-mid">{strive.detail}</p>
               </div>
@@ -185,7 +185,7 @@ export default function InitiativesPage() {
       {/* ---------------------------------------------------------- training */}
       <Section rule tight>
         <Container>
-          <div className="gable-cut-lg flex flex-col gap-6 border border-brass/25 bg-ink-900 p-7 shadow-[var(--shadow-lg)] sm:flex-row sm:items-center sm:justify-between sm:p-9">
+          <div className="gable-cut-lg flex flex-col gap-6 border border-agri/25 bg-ink-900 p-7 shadow-[var(--shadow-lg)] sm:flex-row sm:items-center sm:justify-between sm:p-9">
             <div className="max-w-xl">
               <Eyebrow>Training</Eyebrow>
               <h2 className="mt-3 text-[clamp(1.3rem,3.4vw,1.8rem)] font-semibold">

@@ -132,7 +132,7 @@ export default function EventsPage() {
             <EventArchive />
           </div>
 
-          <div className="mt-12 max-w-2xl border-l border-brass/30 pl-5">
+          <div className="mt-12 max-w-2xl border-l border-agri/30 pl-5">
             <Eyebrow>About the photographs</Eyebrow>
             <p className="mt-2.5 text-sm leading-relaxed text-text-lo">
               Thirteen event photographs from the 2017-18 tenure were referenced by the old

@@ -48,11 +48,11 @@ export default function ContactPage() {
 
               <dl className="mt-8 space-y-5 border-t border-ink-600 pt-7">
                 <div>
-                  <dt className="text-[0.72rem] tracking-[0.1em] text-brass uppercase">Phone</dt>
+                  <dt className="text-[0.72rem] tracking-[0.1em] text-agri uppercase">Phone</dt>
                   <dd className="tnum mt-1.5 text-[1.15rem]">
                     <a
                       href={`tel:${contact.phone}`}
-                      className="font-semibold text-brass-lift hover:text-text-hi"
+                      className="font-semibold text-agri-lift hover:text-text-hi"
                     >
                       {contact.phoneDisplay}
                     </a>
@@ -61,13 +61,13 @@ export default function ContactPage() {
 
                 {contact.emails.map((e) => (
                   <div key={e.address}>
-                    <dt className="text-[0.72rem] tracking-[0.1em] text-brass uppercase">
+                    <dt className="text-[0.72rem] tracking-[0.1em] text-agri uppercase">
                       {e.label}
                     </dt>
                     <dd className="mt-1.5">
                       <a
                         href={`mailto:${e.address}`}
-                        className="break-all text-brass-lift hover:text-text-hi"
+                        className="break-all text-agri-lift hover:text-text-hi"
                       >
                         {e.address}
                       </a>
@@ -76,7 +76,7 @@ export default function ContactPage() {
                 ))}
 
                 <div>
-                  <dt className="text-[0.72rem] tracking-[0.1em] text-brass uppercase">Open</dt>
+                  <dt className="text-[0.72rem] tracking-[0.1em] text-agri uppercase">Open</dt>
                   <dd className="mt-1.5 text-text-hi">{contact.hours}</dd>
                 </div>
               </dl>
@@ -89,14 +89,14 @@ export default function ContactPage() {
                   <div key={s.name} className="mt-3.5">
                     <p className="text-[1.02rem] font-semibold text-text-hi">{s.contactName}</p>
                     <p className="mt-1.5 text-sm">
-                      <a href={`tel:${s.phone}`} className="text-brass-lift hover:text-text-hi">
+                      <a href={`tel:${s.phone}`} className="text-agri-lift hover:text-text-hi">
                         {s.phone}
                       </a>
                     </p>
                     <p className="mt-1 text-sm">
                       <a
                         href={`mailto:${s.email}`}
-                        className="break-all text-brass-lift hover:text-text-hi"
+                        className="break-all text-agri-lift hover:text-text-hi"
                       >
                         {s.email}
                       </a>
@@ -114,7 +114,7 @@ export default function ContactPage() {
                         href={s.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-text-mid hover:text-brass-lift"
+                        className="text-sm text-text-mid hover:text-agri-lift"
                       >
                         {s.network} <span aria-hidden="true">↗</span>
                       </a>

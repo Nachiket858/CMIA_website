@@ -173,7 +173,7 @@ export function Header() {
                   href={item.href}
                   prefetch={false}
                   className={`relative rounded-sm px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                    active ? "text-brass-lift" : "text-text-mid hover:text-text-hi"
+                    active ? "text-agri-lift" : "text-text-mid hover:text-text-hi"
                   }`}
                   aria-current={active ? "page" : undefined}
                 >
@@ -197,7 +197,7 @@ export function Header() {
                   type="button"
                   onClick={() => setOpenMenu(open ? null : item.label)}
                   className={`relative flex items-center gap-1.5 rounded-sm px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                    active || open ? "text-brass-lift" : "text-text-mid hover:text-text-hi"
+                    active || open ? "text-agri-lift" : "text-text-mid hover:text-text-hi"
                   }`}
                   aria-expanded={open}
                   aria-haspopup="true"
@@ -233,7 +233,7 @@ export function Header() {
                           </span>
                           <span
                             aria-hidden="true"
-                            className="translate-x-[-4px] text-brass opacity-0 transition-all duration-200 ease-[var(--ease-out-expo)] group-hover/item:translate-x-0 group-hover/item:opacity-100"
+                            className="translate-x-[-4px] text-agri opacity-0 transition-all duration-200 ease-[var(--ease-out-expo)] group-hover/item:translate-x-0 group-hover/item:opacity-100"
                           >
                             →
                           </span>
@@ -317,7 +317,7 @@ export function Header() {
                   {item.label}
                 </Link>
                 {item.children && (
-                  <ul className="mt-2 border-l border-brass/30 pl-4">
+                  <ul className="mt-2 border-l border-agri/30 pl-4">
                     {item.children.map((child) => (
                       <li key={child.href}>
                         <Link
@@ -359,7 +359,7 @@ function NavUnderline({ on }: { on: boolean }) {
   return (
     <span
       aria-hidden="true"
-      className={`absolute inset-x-3 bottom-1 h-px origin-center bg-brass transition-transform duration-300 ease-[var(--ease-out-expo)] ${
+      className={`absolute inset-x-3 bottom-1 h-px origin-center bg-agri transition-transform duration-300 ease-[var(--ease-out-expo)] ${
         on ? "scale-x-100" : "scale-x-0"
       }`}
     />

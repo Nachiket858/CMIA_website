@@ -80,14 +80,14 @@ export function EventArchive() {
                 <div className="flex gap-3.5">
                   <Pictogram
                     name={(cat?.pictogram ?? "shed") as PictogramName}
-                    className="mt-0.5 h-5 w-5 shrink-0 text-brass transition-colors duration-200 group-hover:text-brass-lift"
+                    className="mt-0.5 h-5 w-5 shrink-0 text-agri transition-colors duration-200 group-hover:text-agri-lift"
                   />
                   <div className="min-w-0">
                     <h3 className="text-[0.98rem] leading-snug font-medium text-text-hi">
                       {a.title}
                     </h3>
                     {a.dateLabel && (
-                      <p className="tnum mt-1 text-xs text-brass">{a.dateLabel}</p>
+                      <p className="tnum mt-1 text-xs text-agri">{a.dateLabel}</p>
                     )}
                     {a.detail && (
                       <p className="mt-1.5 text-[0.88rem] leading-relaxed text-text-mid">

@@ -65,8 +65,8 @@ export default function ClustersPage() {
                 {"figures" in c && c.figures && (
                   <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-4">
                     {(c.figures as { value: string; label: string }[]).map((f) => (
-                      <div key={f.label} className="border-l border-brass/30 pl-3.5">
-                        <dd className="tnum font-display text-2xl leading-none font-semibold text-brass-lift">
+                      <div key={f.label} className="border-l border-agri/30 pl-3.5">
+                        <dd className="tnum font-display text-2xl leading-none font-semibold text-agri-lift">
                           {f.value}
                         </dd>
                         <dt className="mt-1.5 text-xs tracking-wide text-text-lo uppercase">
@@ -82,7 +82,7 @@ export default function ClustersPage() {
                 <div className="flex items-start gap-3.5">
                   <Pictogram
                     name={PICTOGRAM[c.id] ?? "shed"}
-                    className="mt-1 h-8 w-8 shrink-0 text-brass"
+                    className="mt-1 h-8 w-8 shrink-0 text-agri"
                   />
                   <div>
                     <Eyebrow>
@@ -115,7 +115,7 @@ export default function ClustersPage() {
                         <li key={f} className="flex gap-3">
                           <span
                             aria-hidden="true"
-                            className="mt-2 h-1 w-1 shrink-0 bg-brass"
+                            className="mt-2 h-1 w-1 shrink-0 bg-agri"
                           />
                           <span className="text-[0.95rem]">{f}</span>
                         </li>
@@ -146,7 +146,7 @@ export default function ClustersPage() {
       {/* --------------------------------------------------------------- CTA */}
       <Section rule tight>
         <Container>
-          <div className="gable-cut-lg border border-brass/25 bg-ink-900 p-7 shadow-[var(--shadow-lg)] sm:p-10">
+          <div className="gable-cut-lg border border-agri/25 bg-ink-900 p-7 shadow-[var(--shadow-lg)] sm:p-10">
             <div className="max-w-2xl">
               <Eyebrow>Interested in a cluster</Eyebrow>
               <h2 className="mt-3 text-[clamp(1.4rem,3.6vw,2rem)] font-semibold">

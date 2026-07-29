@@ -56,14 +56,14 @@ export default function GalleryPage() {
                   href={site.social.find((s) => s.network === "YouTube")!.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 border-b border-brass/40 pb-1 text-sm font-medium text-brass-lift hover:border-brass hover:text-text-hi"
+                  className="inline-flex items-center gap-2 border-b border-agri/40 pb-1 text-sm font-medium text-agri-lift hover:border-agri hover:text-text-hi"
                 >
                   CMIA on YouTube <span aria-hidden="true">↗</span>
                 </a>
               </p>
             </div>
 
-            <div className="border-l border-brass/30 pl-5 lg:pl-6">
+            <div className="border-l border-agri/30 pl-5 lg:pl-6">
               <Eyebrow>Adding photographs</Eyebrow>
               <p className="mt-2.5 text-sm leading-relaxed text-text-lo">
                 The chamber&rsquo;s old photo gallery held five albums of one picture each.

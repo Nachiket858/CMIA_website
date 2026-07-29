@@ -85,7 +85,7 @@ export default function HomePage() {
               <Link
                 href="/what-we-do/"
                 prefetch={false}
-                className="mt-7 inline-flex items-center gap-2 border-b border-brass/40 pb-1 text-sm font-medium text-brass-lift hover:border-brass hover:text-text-hi"
+                className="mt-7 inline-flex items-center gap-2 border-b border-agri/40 pb-1 text-sm font-medium text-agri-lift hover:border-agri hover:text-text-hi"
               >
                 How the chamber facilitates <span aria-hidden="true">→</span>
               </Link>
@@ -209,7 +209,7 @@ export default function HomePage() {
               <Link
                 href="/leadership/past-presidents/"
                 prefetch={false}
-                className="mt-4 inline-flex items-center gap-2 border-b border-brass/40 pb-1 text-sm font-medium text-brass-lift hover:border-brass hover:text-text-hi"
+                className="mt-4 inline-flex items-center gap-2 border-b border-agri/40 pb-1 text-sm font-medium text-agri-lift hover:border-agri hover:text-text-hi"
               >
                 Every president since 1982 <span aria-hidden="true">→</span>
               </Link>

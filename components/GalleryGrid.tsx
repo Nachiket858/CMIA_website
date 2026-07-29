@@ -107,7 +107,7 @@ export function GalleryGrid() {
               className="group block w-full overflow-hidden rounded-sm outline-none"
               aria-label={`Open: ${p.alt}`}
             >
-              <PhotoFrame ratio="1/1" className="rounded-sm border border-ink-600/70 transition-[border-color,box-shadow] duration-300 group-hover:border-brass/50 group-hover:shadow-[var(--shadow-md)] group-focus-visible:border-agri-lift">
+              <PhotoFrame ratio="1/1" className="rounded-sm border border-ink-600/70 transition-[border-color,box-shadow] duration-300 group-hover:border-agri/50 group-hover:shadow-[var(--shadow-md)] group-focus-visible:border-agri-lift">
                 <Picture
                   src={p.file}
                   alt={p.alt}
@@ -168,7 +168,7 @@ export function GalleryGrid() {
               type="button"
               onClick={requestClose}
               autoFocus
-              className="pressable rounded-sm border border-ink-500 px-3.5 py-2 text-sm font-medium text-text-hi transition-colors hover:border-brass/50"
+              className="pressable rounded-sm border border-ink-500 px-3.5 py-2 text-sm font-medium text-text-hi transition-colors hover:border-agri/50"
             >
               Close
             </button>
@@ -181,7 +181,7 @@ export function GalleryGrid() {
               type="button"
               onClick={() => step(-1)}
               aria-label="Previous photograph"
-              className="pressable absolute left-2 z-10 hidden h-11 w-11 place-items-center rounded-full border border-ink-500 bg-ink-900/70 text-text-hi backdrop-blur-sm transition-colors hover:border-brass/60 sm:grid"
+              className="pressable absolute left-2 z-10 hidden h-11 w-11 place-items-center rounded-full border border-ink-500 bg-ink-900/70 text-text-hi backdrop-blur-sm transition-colors hover:border-agri/60 sm:grid"
             >
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none">
                 <path d="M15 5l-7 7 7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -191,7 +191,7 @@ export function GalleryGrid() {
               type="button"
               onClick={() => step(1)}
               aria-label="Next photograph"
-              className="pressable absolute right-2 z-10 hidden h-11 w-11 place-items-center rounded-full border border-ink-500 bg-ink-900/70 text-text-hi backdrop-blur-sm transition-colors hover:border-brass/60 sm:grid"
+              className="pressable absolute right-2 z-10 hidden h-11 w-11 place-items-center rounded-full border border-ink-500 bg-ink-900/70 text-text-hi backdrop-blur-sm transition-colors hover:border-agri/60 sm:grid"
             >
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none">
                 <path d="M9 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -210,7 +210,7 @@ export function GalleryGrid() {
 
           <div className="border-t border-ink-600 px-4 py-4">
             <p className="text-sm leading-relaxed text-text-mid">{current.alt}</p>
-            <p className="mt-1 text-xs text-brass">{current.albumTitle}</p>
+            <p className="mt-1 text-xs text-agri">{current.albumTitle}</p>
 
             <div className="mt-4 flex gap-2 sm:hidden">
               <button
@@ -261,7 +261,7 @@ export function AlbumStrip() {
               {"subtitle" in a && a.subtitle && (
                 <p className="mt-1.5 text-sm text-text-mid">{a.subtitle}</p>
               )}
-              <p className="tnum mt-auto pt-4 text-xs text-brass">
+              <p className="tnum mt-auto pt-4 text-xs text-agri">
                 {a.photos.length} {a.photos.length === 1 ? "photograph" : "photographs"}
               </p>
             </div>

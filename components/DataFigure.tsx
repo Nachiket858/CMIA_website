@@ -50,11 +50,11 @@ export function DataFigure({
           onClick={() => setShowTable((s) => !s)}
           aria-expanded={showTable}
           aria-controls={`${id}-table`}
-          className="pressable group/tbl flex shrink-0 items-center gap-1.5 rounded-sm border border-ink-500 px-2.5 py-1.5 text-xs font-medium text-text-mid transition-colors duration-200 hover:border-brass/50 hover:text-text-hi"
+          className="pressable group/tbl flex shrink-0 items-center gap-1.5 rounded-sm border border-ink-500 px-2.5 py-1.5 text-xs font-medium text-text-mid transition-colors duration-200 hover:border-agri/50 hover:text-text-hi"
         >
           <svg
             viewBox="0 0 14 14"
-            className="h-3 w-3 text-brass"
+            className="h-3 w-3 text-agri"
             aria-hidden="true"
             fill="none"
           >
@@ -104,7 +104,7 @@ export function DataFigure({
                       <th
                         key={h}
                         scope="col"
-                        className="px-4 py-2.5 text-xs font-semibold tracking-wide text-brass uppercase sm:px-5"
+                        className="px-4 py-2.5 text-xs font-semibold tracking-wide text-agri uppercase sm:px-5"
                       >
                         {h}
                       </th>

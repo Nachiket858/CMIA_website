@@ -52,7 +52,7 @@ export function Disclosure({
               onBone
                 ? "text-doc-hi"
                 : open
-                  ? "text-brass-lift"
+                  ? "text-agri-lift"
                   : "text-text-hi"
             }`}
           >
@@ -72,8 +72,8 @@ export function Disclosure({
             onBone
               ? "border-bone-300 text-doc-mid"
               : open
-                ? "border-brass bg-brass/10 text-brass-lift"
-                : "border-ink-500 text-brass group-hover:border-brass/60"
+                ? "border-agri bg-agri/10 text-agri-lift"
+                : "border-ink-500 text-agri group-hover:border-agri/60"
           }`}
           aria-hidden="true"
         >
