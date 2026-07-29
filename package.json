@@ -16,7 +16,7 @@
     "images": "npm run harvest && npm run optimize"
   },
   "dependencies": {
-    "next": "15.5.4",
+    "next": "15.5.22",
     "react": "19.1.1",
     "react-dom": "19.1.1"
   },
