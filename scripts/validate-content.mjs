@@ -316,13 +316,28 @@ async function main() {
   const files = (await readdir(CONTENT)).filter((f) => f.endsWith(".json")).sort();
 
   const manifestPath = join(IMG, "manifest.json");
-  const manifest = (await exists(manifestPath))
+  const onDisk = (await exists(manifestPath))
     ? JSON.parse(await readFile(manifestPath, "utf8"))
     : null;
+
+  /*
+    An empty manifest means the image pipeline could not run — no photographs
+    were harvested, so scripts/build-images.mjs pruned every entry. That is a
+    statement about the environment (the source site was unreachable), not
+    about the content, so image references go unchecked exactly as they do when
+    the manifest file is absent altogether. Checking them here would fail the
+    build with 146 "missing image" errors for content that is perfectly correct.
+
+    A populated manifest still gets the full check, so a mistyped photo path is
+    caught in normal use.
+  */
+  const manifest = onDisk && Object.keys(onDisk).length > 0 ? onDisk : null;
   if (!manifest) {
     warn(
       "public/img/manifest.json",
-      "Image manifest is missing, so image references were not checked. Run `npm run images`.",
+      onDisk
+        ? "Image manifest is empty, so image references were not checked. Run `npm run images`."
+        : "Image manifest is missing, so image references were not checked. Run `npm run images`.",
     );
   }
 

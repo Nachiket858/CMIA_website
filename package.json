@@ -5,7 +5,7 @@
   "description": "Chamber of Marathwada Industries and Agriculture — website",
   "scripts": {
     "dev": "next dev",
-    "prebuild": "npm run images && node scripts/build-redirects.mjs && node scripts/build-og.mjs",
+    "prebuild": "node scripts/build-images.mjs && node scripts/build-redirects.mjs && node scripts/build-og.mjs",
     "build": "npm run validate && next build",
     "start": "npx serve@latest out",
     "lint": "next lint",
