@@ -1,0 +1,772 @@
+{
+  "clusters/auto-components": {
+    "widths": [
+      360,
+      640,
+      960,
+      1280,
+      1617
+    ],
+    "width": 1617,
+    "height": 1082
+  },
+  "clusters/bakery": {
+    "widths": [
+      360,
+      504
+    ],
+    "width": 504,
+    "height": 322
+  },
+  "clusters/garment": {
+    "widths": [
+      360,
+      636
+    ],
+    "width": 636,
+    "height": 383
+  },
+  "clusters/general-engineering": {
+    "widths": [
+      360,
+      640,
+      960,
+      1024
+    ],
+    "width": 1024,
+    "height": 768
+  },
+  "clusters/paithani": {
+    "widths": [
+      360,
+      520
+    ],
+    "width": 520,
+    "height": 360
+  },
+  "clusters/steel-furniture": {
+    "widths": [
+      360,
+      520
+    ],
+    "width": 520,
+    "height": 387
+  },
+  "clusters/truck-body": {
+    "widths": [
+      350
+    ],
+    "width": 350,
+    "height": 225
+  },
+  "documents/iso-certificate": {
+    "widths": [
+      360,
+      488
+    ],
+    "width": 488,
+    "height": 720
+  },
+  "events/chamber-gathering": {
+    "widths": [
+      360,
+      640,
+      960,
+      1250
+    ],
+    "width": 1250,
+    "height": 450
+  },
+  "events/chamber-session-1": {
+    "widths": [
+      360,
+      640,
+      960,
+      1250
+    ],
+    "width": 1250,
+    "height": 450
+  },
+  "events/chamber-session-2": {
+    "widths": [
+      360,
+      640,
+      960,
+      1250
+    ],
+    "width": 1250,
+    "height": 450
+  },
+  "events/cmia-team-toyota-kirloskar": {
+    "widths": [
+      360,
+      640,
+      960,
+      1250
+    ],
+    "width": 1250,
+    "height": 450
+  },
+  "events/cxo-roundtable-suresh-prabhu": {
+    "widths": [
+      360,
+      640,
+      960,
+      1250
+    ],
+    "width": 1250,
+    "height": 450
+  },
+  "events/marathwada": {
+    "widths": [
+      360,
+      640,
+      960,
+      1250
+    ],
+    "width": 1250,
+    "height": 450
+  },
+  "events/mou-gom-toyota-kirloskar": {
+    "widths": [
+      360,
+      640,
+      960,
+      1250
+    ],
+    "width": 1250,
+    "height": 450
+  },
+  "gallery/cxo-roundtable-hrishikesh-mafatlal": {
+    "widths": [
+      360,
+      640,
+      960,
+      1250
+    ],
+    "width": 1250,
+    "height": 450
+  },
+  "gallery/ob-visit-msedcl-md": {
+    "widths": [
+      360,
+      640,
+      960,
+      1250
+    ],
+    "width": 1250,
+    "height": 450
+  },
+  "identity/adia-logo-1968": {
+    "widths": [
+      301
+    ],
+    "width": 301,
+    "height": 237
+  },
+  "identity/cmia-logo-original": {
+    "widths": [
+      150
+    ],
+    "width": 150,
+    "height": 80
+  },
+  "identity/mia-logo-1989": {
+    "widths": [
+      301
+    ],
+    "width": 301,
+    "height": 237
+  },
+  "identity/skill-hub-logo": {
+    "widths": [
+      356
+    ],
+    "width": 356,
+    "height": 153
+  },
+  "initiatives/bamu-university-interaction-2017": {
+    "widths": [
+      360,
+      640,
+      692
+    ],
+    "width": 692,
+    "height": 922
+  },
+  "initiatives/felicitation-minister-bawankule": {
+    "widths": [
+      360,
+      640,
+      960,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1277
+  },
+  "initiatives/jet-airways-umbrella-scheme": {
+    "widths": [
+      360,
+      640,
+      942
+    ],
+    "width": 942,
+    "height": 1080
+  },
+  "initiatives/lighting-conclave-registration": {
+    "widths": [
+      360,
+      640,
+      960,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1277
+  },
+  "initiatives/ngo-donation-arambh-society": {
+    "widths": [
+      360,
+      640,
+      960,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1277
+  },
+  "initiatives/suryakumbh-1": {
+    "widths": [
+      360,
+      640,
+      960,
+      1024
+    ],
+    "width": 1024,
+    "height": 601
+  },
+  "initiatives/suryakumbh-2": {
+    "widths": [
+      360,
+      640,
+      960,
+      1024
+    ],
+    "width": 1024,
+    "height": 628
+  },
+  "initiatives/suryakumbh-3": {
+    "widths": [
+      360,
+      640,
+      960,
+      1024
+    ],
+    "width": 1024,
+    "height": 606
+  },
+  "members/ajeet-seeds": {
+    "widths": [
+      300
+    ],
+    "width": 300,
+    "height": 150
+  },
+  "members/auto": {
+    "widths": [
+      100
+    ],
+    "width": 100,
+    "height": 100
+  },
+  "members/bkt-tires": {
+    "widths": [
+      170
+    ],
+    "width": 170,
+    "height": 75
+  },
+  "members/cosmo-films": {
+    "widths": [
+      126
+    ],
+    "width": 126,
+    "height": 62
+  },
+  "members/dhoot-transmission": {
+    "widths": [
+      294
+    ],
+    "width": 294,
+    "height": 90
+  },
+  "members/fal": {
+    "widths": [
+      167
+    ],
+    "width": 167,
+    "height": 98
+  },
+  "members/fdc": {
+    "widths": [
+      126
+    ],
+    "width": 126,
+    "height": 80
+  },
+  "members/icici-bank": {
+    "widths": [
+      360
+    ],
+    "width": 360,
+    "height": 90
+  },
+  "members/innoventure-group": {
+    "widths": [
+      205
+    ],
+    "width": 205,
+    "height": 135
+  },
+  "members/kg": {
+    "widths": [
+      101
+    ],
+    "width": 101,
+    "height": 93
+  },
+  "members/logo-india": {
+    "widths": [
+      220
+    ],
+    "width": 220,
+    "height": 135
+  },
+  "members/member-1": {
+    "widths": [
+      157
+    ],
+    "width": 157,
+    "height": 181
+  },
+  "members/member-2": {
+    "widths": [
+      300
+    ],
+    "width": 300,
+    "height": 95
+  },
+  "members/member-3": {
+    "widths": [
+      200
+    ],
+    "width": 200,
+    "height": 110
+  },
+  "members/member-4": {
+    "widths": [
+      182
+    ],
+    "width": 182,
+    "height": 58
+  },
+  "members/member-5": {
+    "widths": [
+      120
+    ],
+    "width": 120,
+    "height": 80
+  },
+  "members/nirlep": {
+    "widths": [
+      200
+    ],
+    "width": 200,
+    "height": 100
+  },
+  "members/nrb-bearings": {
+    "widths": [
+      360
+    ],
+    "width": 360,
+    "height": 183
+  },
+  "members/siemens": {
+    "widths": [
+      300
+    ],
+    "width": 300,
+    "height": 100
+  },
+  "members/sterlite": {
+    "widths": [
+      200
+    ],
+    "width": 200,
+    "height": 100
+  },
+  "members/varroc": {
+    "widths": [
+      209
+    ],
+    "width": 209,
+    "height": 99
+  },
+  "members/wh": {
+    "widths": [
+      360
+    ],
+    "width": 360,
+    "height": 164
+  },
+  "people/ajinkya-save": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/amol-mohite": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/anand-modani": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/aniket-patil": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/ankit-kale": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/anuj-bansal": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/atharveshraj-nandawat": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/gauri-mirashi": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/harshit-modani": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/mihir-soundalgekar": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/mukund-soni": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/priyank-chopra": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/ravish-soni": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/rishikesh-gaoli": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/rohit-dashrathi": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/rushikesh-jaju": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/saurabh-chhallani": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/soham-kotak": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/utkarsha-patil": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/utsav-machhar": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/vikrant-bhale": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "people/yashraj-peety": {
+    "widths": [
+      360,
+      598
+    ],
+    "width": 598,
+    "height": 797
+  },
+  "skill-hub/communication-skill-training": {
+    "widths": [
+      360,
+      640,
+      960,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 2560
+  },
+  "skill-hub/energy-cell-student-visit": {
+    "widths": [
+      360,
+      640,
+      960,
+      1032
+    ],
+    "width": 1032,
+    "height": 581
+  },
+  "skill-hub/excel-training-2018": {
+    "widths": [
+      360,
+      506
+    ],
+    "width": 506,
+    "height": 380
+  },
+  "skill-hub/police-boys-communication-training": {
+    "widths": [
+      320
+    ],
+    "width": 320,
+    "height": 320
+  },
+  "skill-hub/police-boys-industrial-visit-2018": {
+    "widths": [
+      181
+    ],
+    "width": 181,
+    "height": 181
+  },
+  "skill-hub/police-dept-children-programme": {
+    "widths": [
+      181
+    ],
+    "width": 181,
+    "height": 181
+  },
+  "skill-hub/presentation-skill-training": {
+    "widths": [
+      360,
+      506
+    ],
+    "width": 506,
+    "height": 380
+  },
+  "skill-hub/rasci": {
+    "widths": [
+      360,
+      406
+    ],
+    "width": 406,
+    "height": 406
+  },
+  "skill-hub/skill-hub-meeting-2018": {
+    "widths": [
+      360,
+      640,
+      960,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1920
+  },
+  "skill-hub/skills": {
+    "widths": [
+      360,
+      398
+    ],
+    "width": 398,
+    "height": 387
+  },
+  "skill-hub/startup-weekend-ritesh-mishra": {
+    "widths": [
+      360,
+      640,
+      768
+    ],
+    "width": 768,
+    "height": 432
+  },
+  "skill-hub/startup-weekend": {
+    "widths": [
+      360,
+      640,
+      768
+    ],
+    "width": 768,
+    "height": 576
+  },
+  "venue/bajaj-bhavan-front": {
+    "widths": [
+      310
+    ],
+    "width": 310,
+    "height": 210
+  },
+  "venue/bajaj-bhavan-side": {
+    "widths": [
+      310
+    ],
+    "width": 310,
+    "height": 210
+  },
+  "venue/board-room": {
+    "widths": [
+      310
+    ],
+    "width": 310,
+    "height": 210
+  },
+  "venue/conference-hall": {
+    "widths": [
+      360,
+      640,
+      960,
+      1024
+    ],
+    "width": 1024,
+    "height": 768
+  },
+  "venue/function-hall": {
+    "widths": [
+      310
+    ],
+    "width": 310,
+    "height": 210
+  },
+  "venue/hall-1": {
+    "widths": [
+      310
+    ],
+    "width": 310,
+    "height": 210
+  },
+  "venue/hall-2": {
+    "widths": [
+      310
+    ],
+    "width": 310,
+    "height": 210
+  },
+  "venue/hall-3": {
+    "widths": [
+      310
+    ],
+    "width": 310,
+    "height": 210
+  },
+  "venue/office": {
+    "widths": [
+      360,
+      640,
+      960,
+      1280,
+      1920
+    ],
+    "width": 1920,
+    "height": 1317
+  }
+}
