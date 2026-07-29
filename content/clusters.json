@@ -1,0 +1,202 @@
+{
+  "_editing_note": "The seven Common Facility Centre cluster projects. `x` and `y` place the cluster on the Marathwada schematic (0-100 each, left-to-right and top-to-bottom) — nudge them only if the map looks wrong. `facilities` is the machinery list from the old site.",
+
+  "intro": "Clusters pool what a single small unit cannot afford alone: a Common Facility Centre with machinery, testing and training that its members share.",
+  "scheme": "Government of India MSE-CDP scheme",
+  "schemeValue": "₹5 crore",
+  "_schemeValue_note": "The old site cited the ₹5 Cr MSE-CDP scheme for the steel furniture, truck body building and garment clusters specifically.",
+
+  "clusters": [
+    {
+      "id": "auto-components",
+      "name": "Auto Component Cluster",
+      "shortName": "Auto components",
+      "location": "Chikalthana industrial area",
+      "district": "Chhatrapati Sambhajinagar",
+      "photo": "clusters/auto-components",
+      "x": 42,
+      "y": 34,
+      "summary": "Aurangabad's industrial area has become a major hub for auto component manufacturing, supplying almost all the major global OEMs.",
+      "problem": [
+        "Ancillary units have the capacity and already supply most major OEMs of global automobile companies.",
+        "Individual units struggle to stay in global competition for want of modern technology."
+      ],
+      "purpose": "Establish a Common Facility Centre in Chikalthana industrial area so engineering units across Marathwada can use specialised hi-tech facilities at optimum cost.",
+      "facilities": [
+        "Precision machining — VMC, turn mill, CNC lathe",
+        "Sheet metal and tube working — water jet, 5-axis pipe bending, CNC sheet bending",
+        "Material testing and measurement",
+        "IT infrastructure with a CAD-CAM and CAE design centre",
+        "Training and education, meeting and office space, auditorium and exhibition halls"
+      ]
+    },
+    {
+      "id": "steel-furniture",
+      "name": "Steel Furniture Cluster",
+      "shortName": "Steel furniture",
+      "location": "Chhatrapati Sambhajinagar and Latur",
+      "district": "Chhatrapati Sambhajinagar / Latur",
+      "photo": "clusters/steel-furniture",
+      "x": 58,
+      "y": 62,
+      "summary": "Fabricators around Chhatrapati Sambhajinagar and Latur build furniture to order, but without formal training or modern machinery they cannot meet bulk orders on time.",
+      "problem": [
+        "No formal or professional training, and no state-of-the-art machinery, so growing expectations on availability and cost go unmet.",
+        "Considerable scope for improvement in finish and aesthetic quality.",
+        "Market is being lost to traders importing Chinese furniture at lower cost."
+      ],
+      "purpose": "Establish a Common Facility Centre to enhance the capabilities of micro and small steel furniture units, under the government's ₹5 crore MSE-CDP scheme.",
+      "facilities": [
+        "Sheet shearing and bending",
+        "CNC plasma cutting",
+        "CNC pipe bending",
+        "Surface grinding and radial drilling",
+        "Paint booth",
+        "Powder coating",
+        "Assembly and packaging set-up",
+        "Utility services and modern hand tools",
+        "Material handling systems",
+        "Training and skill enhancement centre"
+      ]
+    },
+    {
+      "id": "paithani",
+      "name": "Paithani Cluster",
+      "shortName": "Paithani",
+      "location": "Paithan",
+      "district": "Chhatrapati Sambhajinagar",
+      "photo": "clusters/paithani",
+      "x": 47,
+      "y": 48,
+      "summary": "The Paithani sari is woven by hand from fine silk and zari in the town of Paithan, and is among the richest saris in Maharashtra.",
+      "problem": [
+        "A plain weave with weft figuring worked on tapestry principles — a heritage silk handloom craft.",
+        "Highly skilled women weavers remain poor despite the value of what they make."
+      ],
+      "purpose": "Establish a Common Facility Centre to transform highly skilled women weavers into entrepreneurs, revive the handloom silk weaving art and take it to a global level, and make weaving a good source of earning.",
+      "facilities": ["Reeling machine", "Dyeing machine", "Twisting machine"],
+      "figures": [{ "value": "3", "label": "machines proposed" }]
+    },
+    {
+      "id": "garment",
+      "name": "Garment Cluster",
+      "shortName": "Garment",
+      "location": "Pimpalner village, near Beed",
+      "district": "Beed",
+      "photo": "clusters/garment",
+      "x": 55,
+      "y": 74,
+      "summary": "Stitching has long been a traditional skill of rural women. Forty women in Pimpalner have already trained and want to turn it into a profession.",
+      "problem": [
+        "Forty women in Pimpalner village near Beed have shown keen interest in developing this work.",
+        "They have already taken basic tailoring training at Late Shobhatai Satishrao Patil Mahila Vyavasayik Prashikshan Kendra, Pimpalner.",
+        "With a Common Facility Centre, 20% growth a year is achievable."
+      ],
+      "purpose": "Establish a Common Facility Centre to enhance the capabilities of garment units in and around Pimpalner (Beed), under the government's MSE-CDP scheme.",
+      "facilities": [
+        "Centre of Excellence building with quality checking",
+        "Raw material bank",
+        "Cutting machine",
+        "Stitching machine",
+        "Steam press",
+        "Packaging machine",
+        "Digital embroidery machine with software",
+        "Kaj-button machine",
+        "Laser logo machine",
+        "Design and development centre"
+      ],
+      "figures": [
+        { "value": "40", "label": "women trained and ready" },
+        { "value": "20%", "label": "growth a year achievable" }
+      ]
+    },
+    {
+      "id": "truck-body",
+      "name": "Truck Body Building Cluster",
+      "shortName": "Truck body building",
+      "location": "Madalmohi, Tq. Georai",
+      "district": "Beed",
+      "photo": "clusters/truck-body",
+      "x": 62,
+      "y": 68,
+      "summary": "What began as a few small fabrication units in Madalmohi grew into the region's centre for truck body building — now 40+ units putting out around 200 new bodies a year.",
+      "problem": [
+        "A few people in Madalmohi started small fabrication units and acquired the skill of truck body repair, then complete body building.",
+        "An ecosystem developed as others joined, and the village became a popular centre for the trade in the region.",
+        "There are now 40+ units building around 200 new truck bodies a year, alongside continuous repair and renovation work."
+      ],
+      "purpose": "Establish a Common Facility Centre to enhance the capabilities of micro and small truck body building units in and around Madalmohi, under the government's ₹5 crore MSE-CDP scheme.",
+      "facilities": [
+        "Centre of Excellence building with product and process development",
+        "Saw mill and round / square drill machine",
+        "Sheet shearing and bending",
+        "Wood working machines",
+        "Welding machines",
+        "Utility services — compressor, generator, crane",
+        "Material handling systems — cranes, lifters",
+        "Paint booth",
+        "Training and skill enhancement centre"
+      ],
+      "figures": [
+        { "value": "40+", "label": "units" },
+        { "value": "~200", "label": "new bodies a year" }
+      ]
+    },
+    {
+      "id": "bakery",
+      "name": "Bakery Cluster",
+      "shortName": "Bakery",
+      "location": "Daulatabad",
+      "district": "Chhatrapati Sambhajinagar",
+      "photo": "clusters/bakery",
+      "x": 38,
+      "y": 42,
+      "summary": "Bakery owners around Daulatabad have the skill but not the hygiene processes or variety to hold their market against corporate producers.",
+      "problem": [
+        "Bakery unit owners in and around Daulatabad have developed the skill of preparing products to order.",
+        "Expectations around hygienic processes have risen, and there is wide scope for improvement in quality and variety.",
+        "Market potential is being lost to corporate bakery producers.",
+        "Because bakery products are preferred fresh, local units can capture up to 80% of the local market."
+      ],
+      "purpose": "Establish a Common Facility Centre to enhance the capabilities of micro bakery units in and around Daulatabad, under the government's MSE-CDP scheme.",
+      "facilities": [
+        "Centre of Excellence building with quality checking",
+        "Raw material bank and cold storage",
+        "Dough making machine",
+        "Cream mixing machine",
+        "Oven for baking",
+        "Utility services and modern moulds",
+        "Material handling and logistics"
+      ],
+      "figures": [{ "value": "80%", "label": "of the local market within reach" }]
+    },
+    {
+      "id": "general-engineering",
+      "name": "Tiny General Engineering & Allied Industries Cluster",
+      "shortName": "General engineering",
+      "location": "Chikalthana industrial area",
+      "district": "Chhatrapati Sambhajinagar",
+      "photo": "clusters/general-engineering",
+      "x": 44,
+      "y": 28,
+      "summary": "A cooperative of first-generation entrepreneurs built 60 micro galas for allied manufacturing. Seventeen years on, space and old technology are holding them back.",
+      "problem": [
+        "A group of first-generation young entrepreneurs formed a Tiny Industrial Cooperative Society and created 60 micro galas for allied manufacturing.",
+        "Technology and the business scenario have changed considerably since.",
+        "Space constraints and slow technology adoption now hold these units back even as their market grows several fold."
+      ],
+      "purpose": "Establish a Common Facility Centre in Chikalthana industrial area so engineering units across Marathwada can use specialised hi-tech facilities at optimum cost.",
+      "facilities": [
+        "Precision machining — VMC, turn mill, CNC lathe",
+        "Sheet metal and tube working — water jet, 5-axis pipe bending, CNC sheet bending",
+        "Material testing and measurement",
+        "IT infrastructure with a CAD-CAM and CAE design centre",
+        "Training and education, meeting and office space, auditorium and exhibition halls"
+      ],
+      "figures": [
+        { "value": "60", "label": "micro galas" },
+        { "value": "17 yrs", "label": "since the cooperative formed" }
+      ]
+    }
+  ]
+}

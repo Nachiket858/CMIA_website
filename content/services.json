@@ -1,0 +1,127 @@
+{
+  "_editing_note": "What the chamber does, in four strands. Each `item` gets a card. `pictogram` names a drawing in components/pictograms — the available names are listed in CONTENT-GUIDE.md.",
+
+  "intro": "Four kinds of work, done for 750+ member organisations across eight districts.",
+
+  "strands": [
+    {
+      "id": "represent",
+      "title": "Represent",
+      "lede": "Taking industry's case to the people who decide.",
+      "pictogram": "representation",
+      "photo": "events/cxo-roundtable-suresh-prabhu",
+      "photoAlt": "Shri Suresh Prabhu addressing CMIA members at a CXO roundtable",
+      "items": [
+        {
+          "title": "Issues taken up with government",
+          "detail": "The chamber supports members in representing a specific issue with local administration, the state government or the centre.",
+          "pictogram": "representation"
+        },
+        {
+          "title": "Cordial standing with administration",
+          "detail": "Long-standing relationships with local administration and the state and central governments let the chamber take an issue to the right authority for an amicable solution.",
+          "pictogram": "handshake-file"
+        },
+        {
+          "title": "Government notifications, circulated monthly",
+          "detail": "Copies of important notifications related to industry go to the concerned member every month.",
+          "pictogram": "circular"
+        }
+      ]
+    },
+    {
+      "id": "facilitate",
+      "title": "Facilitate",
+      "lede": "Clearing the path for a unit that wants to start, or grow.",
+      "pictogram": "gate",
+      "photo": "events/mou-gom-toyota-kirloskar",
+      "photoAlt": "Officials signing the memorandum of understanding between the Government of Maharashtra and Toyota Kirloskar Motors, with CMIA present",
+      "items": [
+        {
+          "title": "Certificate of Origin",
+          "detail": "CMIA is authorised to issue Certificates of Origin to exporters from the region.",
+          "pictogram": "stamp",
+          "highlight": true
+        },
+        {
+          "title": "GSP issuance, without the trip to Mumbai",
+          "detail": "A fortnightly visit by an Export Inspection Council representative from Mumbai, so GSP can be issued here.",
+          "pictogram": "gsp",
+          "highlight": true
+        },
+        {
+          "title": "A help desk for tax questions",
+          "detail": "Available at the secretariat for issues related to service tax.",
+          "pictogram": "helpdesk"
+        },
+        {
+          "title": "From first enquiry to expansion",
+          "detail": "A facilitating agency for new investors exploring the region, and for existing units expanding.",
+          "more": [
+            "A catalyst in resolving legitimate issues with any government, semi-government or private agency."
+          ],
+          "pictogram": "gate"
+        }
+      ]
+    },
+    {
+      "id": "promote",
+      "title": "Promote",
+      "lede": "Putting Marathwada's products in front of buyers.",
+      "pictogram": "expo",
+      "photo": "initiatives/lighting-conclave-registration",
+      "photoAlt": "A long registration queue at the CMIA lighting and rooftop solar conclave",
+      "items": [
+        {
+          "title": "Maha Expo, once every four years",
+          "detail": "A high-profile exhibition putting Marathwada in front of investors, with exhibitors from across the country and visitors from abroad.",
+          "more": [
+            "Concurrent seminars bring eminent international speakers for keynotes on current topics.",
+            "Cultural and entertainment programmes run alongside, drawing tourists to the region."
+          ],
+          "pictogram": "expo",
+          "highlight": true,
+          "figure": { "value": "4 yrs", "label": "cadence" }
+        },
+        {
+          "title": "Buyer-seller meets and business visits",
+          "detail": "Along with themed seminars and training programmes hosted for local industry and students.",
+          "pictogram": "handshake-file"
+        },
+        {
+          "title": "Export promotion",
+          "detail": "Special efforts to promote member industries and their products in export markets.",
+          "pictogram": "globe-route"
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "title": "Build",
+      "lede": "The next generation of skills, and the facilities to teach them.",
+      "pictogram": "training",
+      "photo": "skill-hub/skill-hub-meeting-2018",
+      "photoAlt": "A Marathwada Skill Hub meeting in progress at CMIA",
+      "items": [
+        {
+          "title": "Industry-academia interaction",
+          "detail": "A dedicated cell keeps industry and academic institutions talking on a regular basis.",
+          "pictogram": "institution"
+        },
+        {
+          "title": "Training programmes as members need them",
+          "detail": "Organised for the benefit of members according to need.",
+          "pictogram": "training"
+        },
+        {
+          "title": "Seven cluster projects",
+          "detail": "Common Facility Centres putting shared machinery, testing and training within reach of micro and small units.",
+          "pictogram": "shed",
+          "href": "/clusters/",
+          "highlight": true,
+          "figure": { "value": "7", "label": "clusters" }
+        }
+      ]
+    }
+  ]
+}

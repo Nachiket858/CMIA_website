@@ -1,0 +1,90 @@
+{
+  "_editing_note": "External links, grouped. These were the 'Important Links' on the old site. Check them occasionally — several government domains have moved since they were added.",
+
+  "groups": [
+    {
+      "id": "maharashtra",
+      "title": "Maharashtra",
+      "blurb": "State government and the bodies industry deals with most.",
+      "links": [
+        { "label": "Maharashtra Government", "url": "https://www.maharashtra.gov.in/" },
+        { "label": "Chhatrapati Sambhajinagar Municipal Corporation", "url": "http://www.aurangabadmahapalika.org/", "_note": "Listed on the old site as 'Aurangabad Municipal Corportation'." },
+        { "label": "CIDCO", "sublabel": "City & Industrial Development Corporation of Maharashtra", "url": "https://cidco.maharashtra.gov.in/Home.aspx" },
+        { "label": "SICOM", "sublabel": "State Industrial & Investment Corporation of Maharashtra", "url": "http://www.sicomindia.com/" },
+        { "label": "MIDC", "sublabel": "Maharashtra Industrial Development Corporation", "url": "http://www.midcindia.org/" },
+        { "label": "Maharashtra Electricity Regulatory Commission", "url": "http://www.mercindia.org.in/" },
+        { "label": "Food and Drug Administration, Maharashtra", "url": "http://www.fda-mah.com/" },
+        { "label": "Sales Tax Department, Maharashtra", "url": "http://www.mahavat.gov.in/Mahavat/index.jsp" },
+        { "label": "Divisional Commissioner's Office, Aurangabad", "url": "http://aurangabad.nic.in/newsite1/divcom/divcom_home.htm" }
+      ]
+    },
+    {
+      "id": "chambers",
+      "title": "Chambers & associations",
+      "blurb": "Peer bodies, including the three CMIA is affiliated to.",
+      "links": [
+        { "label": "Confederation of Indian Industry", "sublabel": "CII", "url": "http://www.cii.in/", "affiliated": true },
+        { "label": "ASSOCHAM", "sublabel": "The Associated Chambers of Commerce and Industry of India", "url": "http://www.assocham.org/", "affiliated": true },
+        { "label": "FIEO", "sublabel": "Federation of Indian Export Organisations", "url": "https://www.fieo.org/" },
+        { "label": "Bombay Chamber of Commerce & Industry", "url": "http://www.bombaychamber.com/" },
+        { "label": "Indian Merchants' Chamber", "url": "http://www.imcnet.org/" },
+        { "label": "MASSIA", "sublabel": "Marathwada Association of Small Scale Industries & Agriculture", "url": "http://massia.org/" }
+      ]
+    },
+    {
+      "id": "central",
+      "title": "Central government",
+      "blurb": "Ministries, revenue and regulators.",
+      "links": [
+        { "label": "Ministry of Commerce and Industry", "url": "http://commerce.nic.in/DOC/index.aspx" },
+        { "label": "Finance Ministry of India", "url": "http://finmin.nic.in/" },
+        { "label": "Income Tax Department", "url": "http://www.incometaxindia.gov.in/Pages/default.aspx" },
+        { "label": "Central Board of Direct Taxes", "sublabel": "CBDT", "url": "http://www.incometaxindia.gov.in/Pages/default.aspx" },
+        { "label": "Central Board of Excise and Customs", "url": "http://www.cbec.gov.in/" },
+        { "label": "Reserve Bank of India", "url": "https://www.rbi.org.in/" },
+        { "label": "Securities and Exchange Board of India", "url": "http://www.sebi.gov.in/sebiweb/" },
+        { "label": "National Portal of India", "url": "http://www.nic.in/" },
+        { "label": "Diplomatic missions in India", "url": "http://meaprotocol.nic.in/?a1" }
+      ]
+    },
+    {
+      "id": "industry-support",
+      "title": "Industry & trade support",
+      "blurb": "Agencies for small industry, exports and agriculture.",
+      "links": [
+        { "label": "NSIC", "sublabel": "The National Small Industries Corporation", "url": "http://www.nsic.co.in/" },
+        { "label": "ITPO", "sublabel": "India Trade Promotion Organisation", "url": "http://www.indiatradefair.com/" },
+        { "label": "APEDA", "sublabel": "Agricultural & Processed Food Products Export Development Authority", "url": "http://apeda.gov.in/apedawebsite/" },
+        { "label": "ICAR", "sublabel": "Indian Council of Agricultural Research", "url": "http://www.icar.org.in/" }
+      ]
+    },
+    {
+      "id": "economic-data",
+      "title": "Budget & economic data",
+      "blurb": "What the old site called the union budget and price index links.",
+      "links": [
+        { "label": "Union Budget & Economic Survey", "url": "http://www.indiabudget.nic.in/" },
+        { "label": "Wholesale Price Index", "url": "http://www.eaindustry.nic.in/" }
+      ]
+    }
+  ],
+
+  "_removed": [
+    {
+      "label": "Ministry of Small Scale Industry",
+      "reason": "Listed on the old site with href='#' — there was no destination. The ministry's functions now sit with the Ministry of MSME; add that link if the chamber wants it."
+    },
+    {
+      "label": "Small Industries Development Organization (SIDO)",
+      "reason": "Duplicated the NSIC URL on the old site. Folded into the NSIC entry to avoid a link that goes somewhere its label does not describe."
+    },
+    {
+      "label": "The Associated Chambers of Commerce & Industry of India (second entry)",
+      "reason": "Listed twice in the same table on the old site with the same URL."
+    },
+    {
+      "label": "Directory, Links and General Information about the Central Government (sarkaritel.com)",
+      "reason": "A private directory site, not a government resource. Dropped as it no longer resolves reliably; restore it if the chamber wants it back."
+    }
+  ]
+}

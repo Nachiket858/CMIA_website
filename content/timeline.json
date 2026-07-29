@@ -1,0 +1,175 @@
+{
+  "_editing_note": "The chamber's history as dated milestones. `era` groups them under the three names the organisation has carried. Add new milestones at the end of the `milestones` array — the page sorts by year.",
+
+  "eras": [
+    {
+      "id": "adia",
+      "abbr": "ADIA",
+      "name": "Aurangabad District Industries Association",
+      "from": 1969,
+      "to": 1989,
+      "logo": "identity/adia-logo-1968",
+      "logoNote": "The ADIA wordmark, which carried the line 'Established in 1968'.",
+      "_flag": "The logo reads 'Established in 1968' while the history text describes the association being formed during the 1969 industries week, with seven industrialists first meeting in 1967-68. Both are preserved; the chamber may wish to settle on one founding date."
+    },
+    {
+      "id": "mia",
+      "abbr": "MIA",
+      "name": "Marathwada Industries Association",
+      "from": 1989,
+      "to": 2002,
+      "logo": "identity/mia-logo-1989",
+      "logoNote": "The MIA mark — the same peaked-roof chevrons the chamber still uses, then in blue."
+    },
+    {
+      "id": "cmia",
+      "abbr": "CMIA",
+      "name": "Chamber of Marathwada Industries and Agriculture",
+      "from": 2002,
+      "to": null,
+      "logo": "identity/cmia-logo-original",
+      "logoNote": "Agriculture joins the name, and the chevrons turn to the present orange."
+    }
+  ],
+
+  "milestones": [
+    {
+      "year": 1960,
+      "yearLabel": "The sixties",
+      "era": "adia",
+      "title": "The wheel is set in motion",
+      "body": "Deccan Flour Mills, Silverlight Nirlep Industries, Prakalp, Maharashtra Engineering, Bagga Engineering and Garley Equipments bring the first industrial awareness to a region then classed as backward.",
+      "kind": "context"
+    },
+    {
+      "year": 1967,
+      "yearLabel": "1967-68",
+      "era": "adia",
+      "title": "Seven industrialists come together",
+      "body": "The group that would form the association first meets.",
+      "figure": { "value": "7", "label": "founders" },
+      "kind": "milestone"
+    },
+    {
+      "year": 1969,
+      "yearLabel": "July 1969",
+      "era": "adia",
+      "title": "ADIA is formed and starts enrolling members",
+      "body": "Aurangabad District Industries Association is founded during the industries week celebration, and begins enrolling members from July.",
+      "kind": "founding"
+    },
+    {
+      "year": 1970,
+      "yearLabel": "October 1970",
+      "era": "adia",
+      "title": "Formally inaugurated",
+      "body": "Shri K. R. Bhat inaugurates the association. Shri Ghanshyamji Jalan and Shri N. G. Bhogale are its main pillars.",
+      "people": [
+        "Shri. Ghanshyamji Jalan",
+        "Shri. N. G. Bhogale",
+        "Shri. D. B. Prabhu",
+        "Shri. Divansing Bagga",
+        "Shri. Yashwant Garde",
+        "Shri. B. G. Rane",
+        "Smt. Tai Bastikar"
+      ],
+      "peopleLabel": "Founding members",
+      "kind": "milestone"
+    },
+    {
+      "year": 1989,
+      "yearLabel": "June 1989",
+      "era": "mia",
+      "title": "Renamed Marathwada Industries Association",
+      "body": "The association's work had grown beyond the district to the region, and the name follows.",
+      "kind": "rename"
+    },
+    {
+      "year": 1994,
+      "yearLabel": "1994",
+      "era": "mia",
+      "title": "The constitution is formalised",
+      "body": "Drawn up during Shri N.K. Gupta's presidency, drawing on the constitutions of similar bodies and the wishes of patron members and past presidents.",
+      "kind": "milestone"
+    },
+    {
+      "year": 2000,
+      "yearLabel": "2000-01",
+      "era": "mia",
+      "title": "Constitution reviewed and amended",
+      "body": "A review committee including Shri M.D. Save recommends changes; the general body approves them unanimously. Agriculture and agro-processing are written in as a major thrust area.",
+      "kind": "milestone"
+    },
+    {
+      "year": 2002,
+      "yearLabel": "April 2002",
+      "era": "cmia",
+      "title": "Agriculture joins the name",
+      "body": "Members hold that Marathwada can only grow if its agriculture becomes world class. MIA becomes the Chamber of Marathwada Industries and Agriculture.",
+      "kind": "rename"
+    },
+    {
+      "year": 2016,
+      "yearLabel": "12 January 2016",
+      "era": "cmia",
+      "title": "SuryaKumbh solar cooking festival",
+      "body": "Held with Simplified Technologies. School students each built a solar oven and cooked lunch in it, entering the Guinness World Records and the Limca Book of Records.",
+      "photo": "initiatives/suryakumbh-1",
+      "kind": "initiative"
+    },
+    {
+      "year": 2017,
+      "yearLabel": "7 June 2017",
+      "era": "cmia",
+      "title": "Joint summit with Dr. Babasaheb Ambedkar Marathwada University",
+      "body": "On technical education and its improvement, held at the university campus.",
+      "photo": "initiatives/bamu-university-interaction-2017",
+      "kind": "initiative"
+    },
+    {
+      "year": 2019,
+      "yearLabel": "STRIVE",
+      "era": "cmia",
+      "title": "Selected for the World Bank's STRIVE scheme",
+      "body": "The only industry chamber in Maharashtra selected, to improve the relevance and efficiency of ITI training and apprenticeships.",
+      "kind": "initiative"
+    },
+    {
+      "year": 2026,
+      "yearLabel": "Today",
+      "era": "cmia",
+      "title": "750+ member organisations",
+      "body": "Across small, medium and large scale industry, from single units to multinationals.",
+      "figure": { "value": "750+", "label": "members" },
+      "kind": "present"
+    }
+  ],
+
+  "constitution": {
+    "title": "On the constitution",
+    "intro": "The chamber's constitution was last formalised in 1994 and amended in 2000-01.",
+    "_note": "Condensed from the old history page, which reproduced the president's foreword at length. Facts, names and dates are unchanged; the original is available from the office.",
+    "paragraphs": [
+      "A constitution enshrines the aspirations of the people who constitute the body, and sets the rules that keep it from malfunctioning while those aspirations are pursued.",
+      "The constitution of MIA was last formalised in 1994, when Shri N.K. Gupta was president. It drew on the constitutions of comparable bodies and on the wishes of patron members, past presidents and senior members.",
+      "In 2000-01 the executive committee took up a review. A committee including Shri M.D. Save recommended changes, which were debated by the executive committee and approved unanimously by the general body.",
+      "The amended constitution puts thrust on constant upgrading of the chamber's vision and mission, and constitutes an Asset Management Committee to give continuity to short- and long-term decisions.",
+      "Agriculture and agro-processing were incorporated as a major thrust area, on the view that without their comprehensive development, the growth of both the region and its industry would remain incomplete."
+    ]
+  },
+
+  "vision": {
+    "statement": "To strive for global competitiveness, sustainable growth and global recognition for Marathwada based industries, agriculture, trade and business.",
+    "policy": [
+      "Collective representation of industry, agriculture, trade and business of Maharashtra with government and the business fraternity, to facilitate the region's growth.",
+      "Turning around mindset, facilities and infrastructure for Marathwada based industry, agriculture, trade and business.",
+      "Consistent interaction and liaison with governance, and initiatives in human resource development for continual improvement."
+    ],
+    "_note": "Condensed from the old Vision & Policy page. The original wording contained several typographical errors ('Accrue shall be', 'We shell strive'); the substance is unchanged.",
+    "certificate": {
+      "image": "documents/iso-certificate",
+      "label": "ISO certificate",
+      "_note": "Reproduced from the old Vision & Policy page, where it appeared without a caption. Confirm the standard and validity before describing it in detail."
+    }
+  }
+}

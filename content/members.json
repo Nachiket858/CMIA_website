@@ -1,0 +1,37 @@
+{
+  "_editing_note": "Logos shown on the home page. To add one, put a transparent PNG or SVG in assets/source/members/, run `npm run images`, and add an entry with `logo` set to 'members/<filename-without-extension>'.",
+
+  "heading": "Among the member organisations",
+  "_heading_note": "The old home page showed these logos in an unlabelled carousel, immediately after the line 'All the leading industries including the Multinational Companies (MNCs) are its members'. The heading above follows that. Ask the office to confirm the list is current before treating it as authoritative — a few entries could not be identified from the filename alone and are marked `unidentified`.",
+
+  "logos": [
+    { "name": "Siemens", "logo": "members/siemens" },
+    { "name": "Varroc", "logo": "members/varroc" },
+    { "name": "Sterlite", "logo": "members/sterlite" },
+    { "name": "NRB Bearings", "logo": "members/nrb-bearings" },
+    { "name": "Cosmo Films", "logo": "members/cosmo-films" },
+    { "name": "Nirlep", "logo": "members/nirlep" },
+    { "name": "BKT Tires", "logo": "members/bkt-tires" },
+    { "name": "Dhoot Transmission", "logo": "members/dhoot-transmission" },
+    { "name": "ICICI Bank", "logo": "members/icici-bank" },
+    { "name": "Ajeet Seeds", "logo": "members/ajeet-seeds" },
+    { "name": "FDC", "logo": "members/fdc" },
+    { "name": "Innoventure Group", "logo": "members/innoventure-group" },
+    { "name": "Wockhardt", "logo": "members/wh", "unidentified": true, "_note": "Filename was WH_Logo.png. Confirm the organisation before publishing this name, or set `unidentified` and the logo renders without a caption." },
+    { "name": "KG", "logo": "members/kg", "unidentified": true },
+    { "name": "India", "logo": "members/logo-india", "unidentified": true },
+    { "name": "FAL", "logo": "members/fal", "unidentified": true },
+    { "name": "Auto", "logo": "members/auto", "unidentified": true },
+    { "name": "Member organisation", "logo": "members/member-1", "unidentified": true },
+    { "name": "Member organisation", "logo": "members/member-2", "unidentified": true },
+    { "name": "Member organisation", "logo": "members/member-3", "unidentified": true },
+    { "name": "Member organisation", "logo": "members/member-4", "unidentified": true },
+    { "name": "Member organisation", "logo": "members/member-5", "unidentified": true }
+  ],
+
+  "investmentsFacilitated": [
+    { "name": "Toyota Kirloskar Motors", "at": "AURIC", "photo": "events/mou-gom-toyota-kirloskar" },
+    { "name": "Ather Energy", "at": "AURIC", "photo": null }
+  ],
+  "_investments_source": "Old home page: 'Notably, CMIA has facilitated significant investments such as Toyota Kirloskar Motors and Ather Energy at the AURIC, reaffirming our commitment to promoting sustainable economic development.'"
+}

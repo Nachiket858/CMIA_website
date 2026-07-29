@@ -1,0 +1,36 @@
+{
+  "name": "cmia-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chamber of Marathwada Industries and Agriculture — website",
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "node scripts/build-redirects.mjs && node scripts/build-og.mjs",
+    "build": "npm run validate && next build",
+    "start": "npx serve@latest out",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "validate": "node scripts/validate-content.mjs",
+    "harvest": "node scripts/harvest.mjs",
+    "optimize": "node scripts/optimize.mjs",
+    "images": "npm run harvest && npm run optimize"
+  },
+  "dependencies": {
+    "next": "15.5.4",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "sharp": "^0.34.3",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2",
+    "zod": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

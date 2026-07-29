@@ -1,0 +1,166 @@
+{
+  "_editing_note": "Fees, categories and how to apply. Fees are in rupees as plain numbers so the site can compare them — do not add commas or '₹'. When fees change, update `classes` and bump `feesEffective`.",
+
+  "feesEffective": "2025-26",
+  "gstPercent": 18,
+  "gstNote": "18% GST applies on all fees.",
+  "formPdf": "Membership Form_2025-26.pdf",
+  "formPdfSource": "https://www.cmia.co.in/images/Membership%20Form_2025-26.pdf",
+  "_formPdf_note": "The 2025-26 form is served from the old site. Place the current PDF at public/downloads/ and update `formPdf` when a new one is issued.",
+
+  "classes": [
+    {
+      "id": "small-scale",
+      "name": "Small Scale",
+      "abbr": "SSI",
+      "annual": 3000,
+      "admission": 3500,
+      "for": "Small scale industrial units"
+    },
+    {
+      "id": "medium-scale",
+      "name": "Medium Scale",
+      "abbr": "MSI",
+      "annual": 8000,
+      "admission": 8000,
+      "for": "Medium scale industrial units"
+    },
+    {
+      "id": "large-scale",
+      "name": "Large Scale",
+      "abbr": "LSI",
+      "annual": 30000,
+      "admission": 25000,
+      "for": "Large scale industrial units"
+    },
+    {
+      "id": "associate-institutional",
+      "name": "Associate (Institutional)",
+      "abbr": "Asso. Inst.",
+      "annual": 3000,
+      "admission": 5000,
+      "for": "Institutions, service firms and associations"
+    },
+    {
+      "id": "associate-individual",
+      "name": "Associate (Individual)",
+      "abbr": "Asso. Indi.",
+      "annual": 3000,
+      "admission": 3500,
+      "for": "Individuals"
+    }
+  ],
+
+  "tenures": [
+    {
+      "id": "annual",
+      "name": "Annual",
+      "years": 1,
+      "annualMultiple": 1,
+      "description": "One year's subscription plus the one-time admission fee."
+    },
+    {
+      "id": "five-year",
+      "name": "5 years",
+      "years": 5,
+      "annualMultiple": 4,
+      "description": "Five years' membership for four years' subscription, plus the one-time admission fee.",
+      "_note": "The membership form calls this the '5 years Subscription Advantage'. The old website's fee table instead listed a '3 Year' option at three times the annual subscription. The form is the more recent document, so it is used here; the 3-year row is preserved in `supersededOptions` below."
+    },
+    {
+      "id": "ten-year",
+      "name": "10 years",
+      "years": 10,
+      "annualMultiple": 7,
+      "description": "Ten years' membership for seven years' subscription, plus the one-time admission fee."
+    },
+    {
+      "id": "life",
+      "name": "Life",
+      "years": 20,
+      "annualMultiple": 15,
+      "description": "Twenty years' membership for fifteen years' subscription, plus the one-time admission fee.",
+      "_note": "The form and the old fee table agree: Life Membership runs for 20 years."
+    }
+  ],
+
+  "supersededOptions": [
+    {
+      "name": "3 years",
+      "detail": "Three times the annual subscription plus the admission fee.",
+      "source": "Old website fee table. Not present on the 2025-26 application form."
+    }
+  ],
+
+  "documents": [
+    "Proof of membership category — copy of Udyog / UDYAM Aadhaar",
+    "GST certificate",
+    "For Associate (Individual) — Aadhaar copy as ID proof",
+    "DD or cheque for the membership fee"
+  ],
+
+  "formFields": {
+    "industrySize": ["Large", "Medium", "Small", "Associate (Institutional)", "Associate (Individual)"],
+    "industrySizeBasis": "Based on UDYAM Aadhaar",
+    "industryType": ["Manufacturing", "Services", "Association"],
+    "representatives": "One official representative (owner), up to two additional representatives, and an HR contact. Additional representatives are added to the chamber's WhatsApp group.",
+    "exportQuestion": "Whether the unit exports, and to which countries."
+  },
+
+  "paymentModes": ["Cash", "RTGS / NEFT", "DD / Cheque"],
+
+  "approval": "Applications are considered at an Executive Committee meeting and must be proposed and seconded by existing members.",
+
+  "benefits": [
+    {
+      "id": "notifications",
+      "title": "Government notifications, monthly",
+      "detail": "Copies of important notifications affecting your industry, circulated every month.",
+      "pictogram": "circular"
+    },
+    {
+      "id": "certificate-of-origin",
+      "title": "Certificate of Origin",
+      "detail": "CMIA is authorised to issue Certificates of Origin to exporters from the region.",
+      "pictogram": "stamp",
+      "highlight": true
+    },
+    {
+      "id": "gsp",
+      "title": "GSP issuance, fortnightly",
+      "detail": "A representative of the Export Inspection Council visits from Mumbai every fortnight to issue GSP here.",
+      "pictogram": "gsp"
+    },
+    {
+      "id": "representation",
+      "title": "Representation that reaches",
+      "detail": "The chamber takes specific issues to local administration, the state and the centre on a member's behalf.",
+      "pictogram": "representation",
+      "highlight": true
+    },
+    {
+      "id": "helpdesk",
+      "title": "Tax help desk",
+      "detail": "A help desk at the secretariat for issues related to service tax.",
+      "pictogram": "helpdesk"
+    },
+    {
+      "id": "training",
+      "title": "Training, as needed",
+      "detail": "Training programmes organised for members according to need.",
+      "pictogram": "training"
+    },
+    {
+      "id": "venue",
+      "title": "The chamber's rooms",
+      "detail": "A seminar hall seating 80+, a board room and a closed-door meeting room at Bajaj Bhavan.",
+      "pictogram": "hall"
+    },
+    {
+      "id": "buyer-seller",
+      "title": "Buyer-seller meets and Maha Expo",
+      "detail": "Buyer-seller meets, themed seminars and business visits — and Maha Expo, held once every four years.",
+      "pictogram": "expo"
+    }
+  ]
+}

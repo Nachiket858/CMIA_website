@@ -1,0 +1,122 @@
+{
+  "_editing_note": "Organisation-wide facts. Changing a value here updates it everywhere on the site. See CONTENT-GUIDE.md.",
+
+  "name": "Chamber of Marathwada Industries and Agriculture",
+  "shortName": "CMIA",
+  "tagline": "The voice of Marathwada industry since 1969.",
+  "foundedYear": 1969,
+  "yearsActive": 57,
+  "_yearsActive_note": "Published on the old homepage as '57 years'. Consistent with a 1969 founding. Update once a year.",
+
+  "description": "An association of the leading industries, organisations and individuals working for industrialisation and the overall development of the Marathwada region.",
+
+  "positioning": [
+    "An association of the leading industries, organisations and individuals working for industrialisation and the overall development of Marathwada.",
+    "Close association with national bodies — CII, FICCI and ASSOCHAM — and a record of acting as a catalyst for the region's industrial growth.",
+    "CMIA has been the initiator of many of the ideas that went on to develop the region."
+  ],
+
+  "focus": [
+    { "title": "Infrastructure", "detail": "Strengthening infrastructure development", "pictogram": "shed" },
+    { "title": "Skills", "detail": "Enhancing skill development initiatives", "pictogram": "training" },
+    { "title": "Representation", "detail": "Addressing key issues faced by industries", "pictogram": "representation" },
+    { "title": "Exports", "detail": "Promoting exports from the region", "pictogram": "globe-route" }
+  ],
+  "_focus_source": "The four focus areas listed on the old home page.",
+
+  "stats": {
+    "members": "750+",
+    "_members_note": "The old homepage said 750+. The older history page still said 600+ — that figure is preserved in timeline.json where it appears historically. Do not treat the two as a growth trend.",
+    "membersLabel": "member organisations",
+    "districts": 8,
+    "_districts_note": "Marathwada division. Used only as a label, never plotted as data.",
+    "hallCapacity": "80+",
+    "clusters": 7,
+    "presidentialTerms": 44
+  },
+
+  "address": {
+    "line1": "P-2, Bajaj Bhavan",
+    "line2": "Shri Madhur Bajaj Marg",
+    "line3": "Railway Station MIDC",
+    "city": "Chhatrapati Sambhajinagar",
+    "pincode": "431005",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+
+  "contact": {
+    "phone": "+91-240-2333029",
+    "phoneDisplay": "+91 240 2333029",
+    "emails": [
+      { "label": "Secretary General", "address": "secretarygeneral@cmia.co.in" },
+      { "label": "Office", "address": "office@cmia.co.in" }
+    ],
+    "hours": "9:30 AM to 5:30 PM",
+    "hoursDays": "Monday to Saturday",
+    "_hoursDays_note": "PLACEHOLDER — the old site listed times but not days. Confirm with the office before publishing.",
+    "mapQuery": "Bajaj Bhavan, MIDC Railway Station, Chhatrapati Sambhajinagar, Maharashtra 431005",
+    "geo": { "lat": 19.8656, "lng": 75.3433 },
+    "_geo_note": "Approximate centroid of the Railway Station MIDC area, used to centre the map. Replace with the exact pin if the office has one."
+  },
+
+  "registration": {
+    "societyReg": "SR 65/88",
+    "publicTrustReg": "F-1614",
+    "gst": "27AAAAM0963H1ZO",
+    "pan": "AAAAM0963H",
+    "_source": "Membership Application Form 2025-26 (PDF on the old site)."
+  },
+
+  "bank": {
+    "name": "State Bank of India",
+    "branch": "Railway Station Road, Chhatrapati Sambhajinagar 431005",
+    "beneficiary": "Chamber of Marathwada Industries and Agriculture",
+    "accountType": "Savings Bank",
+    "accountNumber": "52065960072",
+    "ifsc": "SBIN0020302",
+    "notifyPhones": ["8956976792", "8956976793"],
+    "notifyEmail": "office@cmia.co.in"
+  },
+
+  "social": [
+    { "network": "Facebook", "url": "https://www.facebook.com/CMIAurangabad/" },
+    { "network": "X", "url": "https://twitter.com/CMIAAurangabad", "handle": "@CMIAAurangabad" },
+    { "network": "LinkedIn", "url": "https://www.linkedin.com/company/cmiaaurangabad/" },
+    { "network": "Instagram", "url": "https://www.instagram.com/cmiaaurangabad/" },
+    { "network": "YouTube", "url": "https://www.youtube.com/channel/UC5ny0k6bz9uxzXC-Dichagg" }
+  ],
+
+  "affiliations": [
+    {
+      "name": "Confederation of Indian Industry",
+      "abbr": "CII",
+      "url": "http://www.cii.in/"
+    },
+    {
+      "name": "Federation of Indian Chambers of Commerce & Industry",
+      "abbr": "FICCI",
+      "url": "https://ficci.in/"
+    },
+    {
+      "name": "The Associated Chambers of Commerce and Industry of India",
+      "abbr": "ASSOCHAM",
+      "url": "http://www.assocham.org/"
+    }
+  ],
+
+  "related": [
+    {
+      "name": "MAGIC",
+      "fullName": "Marathwada Accelerator for Growth and Incubation Council",
+      "url": "https://magicincubation.com/",
+      "note": "Incubator set up by CMIA. Signed an MOU with NIELIT."
+    }
+  ],
+
+  "zones": [
+    { "id": "waluj", "name": "Waluj" },
+    { "id": "auric", "name": "AURIC" },
+    { "id": "rest", "name": "Rest of Marathwada" }
+  ]
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- The Roofline, as the mark. Three gables in the logo's own colours,
+       sitting on the ink ground the site is built on. -->
+  <rect width="32" height="32" fill="#161310"/>
+  <g fill="none" stroke-linejoin="miter" stroke-width="3">
+    <path d="M3 24 L9.5 13 L16 24" stroke="#CC9866"/>
+    <path d="M11 24 L17.5 13 L24 24" stroke="#FF6634"/>
+    <path d="M19 24 L25.5 13 L32 24" stroke="#3398CC"/>
+  </g>
+  <rect x="0" y="25.5" width="32" height="1.5" fill="#CC9866"/>
+</svg>

@@ -1,0 +1,157 @@
+{
+  "_editing_note": "Photo albums. To add one: copy an existing block, give it a new `id`, and put the photographs in assets/source/gallery/<your-folder>/ then run `npm run images`. `photos` entries need a `file` (path without extension, relative to assets/source) and an `alt` describing what is in the picture for someone who cannot see it.",
+
+  "albums": [
+    {
+      "id": "cxo-roundtable-mafatlal",
+      "title": "CXO Roundtable with Shri Hrishikesh Mafatlal",
+      "subtitle": "Chairman, Mafatlal Industries Ltd.",
+      "category": "roundtable",
+      "cover": "gallery/cxo-roundtable-hrishikesh-mafatlal",
+      "photos": [
+        {
+          "file": "gallery/cxo-roundtable-hrishikesh-mafatlal",
+          "alt": "Shri Hrishikesh Mafatlal, Chairman of Mafatlal Industries, seated with CMIA members at a roundtable discussion"
+        }
+      ]
+    },
+    {
+      "id": "cxo-roundtable-suresh-prabhu",
+      "title": "CXO Roundtable with Shri Suresh Prabhu",
+      "category": "roundtable",
+      "cover": "events/cxo-roundtable-suresh-prabhu",
+      "photos": [
+        {
+          "file": "events/cxo-roundtable-suresh-prabhu",
+          "alt": "Shri Suresh Prabhu addressing CMIA members at a CXO roundtable"
+        }
+      ]
+    },
+    {
+      "id": "ob-visit-msedcl",
+      "title": "Office bearers visit MSEDCL",
+      "subtitle": "With Jt. MD Dr. Rahul Gupta",
+      "category": "meeting",
+      "cover": "gallery/ob-visit-msedcl-md",
+      "photos": [
+        {
+          "file": "gallery/ob-visit-msedcl-md",
+          "alt": "CMIA office bearers meeting Dr. Rahul Gupta, Joint Managing Director of MSEDCL"
+        }
+      ]
+    },
+    {
+      "id": "mou-gom-toyota",
+      "title": "MOU signing — Government of Maharashtra and Toyota Kirloskar Motors",
+      "subtitle": "CMIA present at the signing",
+      "category": "investment",
+      "cover": "events/mou-gom-toyota-kirloskar",
+      "photos": [
+        {
+          "file": "events/mou-gom-toyota-kirloskar",
+          "alt": "Officials of the Government of Maharashtra and Toyota Kirloskar Motors signing a memorandum of understanding, with CMIA representatives present"
+        }
+      ]
+    },
+    {
+      "id": "cmia-toyota-kirloskar",
+      "title": "CMIA team meets Toyota Kirloskar Motors",
+      "category": "investment",
+      "cover": "events/cmia-team-toyota-kirloskar",
+      "photos": [
+        {
+          "file": "events/cmia-team-toyota-kirloskar",
+          "alt": "The CMIA team in discussion with the Toyota Kirloskar Motors team"
+        }
+      ]
+    },
+    {
+      "id": "the-chamber-at-work",
+      "title": "The chamber at work",
+      "subtitle": "Sessions and gatherings at Bajaj Bhavan",
+      "category": "chamber",
+      "cover": "events/chamber-session-1",
+      "photos": [
+        { "file": "events/chamber-session-1", "alt": "Members seated in the CMIA hall during a chamber session" },
+        { "file": "events/chamber-session-2", "alt": "A full hall of CMIA members at a chamber session" },
+        { "file": "events/chamber-gathering", "alt": "CMIA members gathered at an event" },
+        { "file": "events/marathwada", "alt": "The Marathwada region" }
+      ]
+    },
+    {
+      "id": "skill-hub-album",
+      "title": "Marathwada Skill Hub",
+      "subtitle": "Training, industry visits and startup weekends",
+      "category": "skill",
+      "cover": "skill-hub/skill-hub-meeting-2018",
+      "photos": [
+        { "file": "skill-hub/skill-hub-meeting-2018", "alt": "Skill Hub meeting at CMIA, February 2018" },
+        { "file": "skill-hub/excel-training-2018", "alt": "Participants at an Excel training session" },
+        { "file": "skill-hub/communication-skill-training", "alt": "A communication skills training session in progress" },
+        { "file": "skill-hub/presentation-skill-training", "alt": "A presentation skills training session" },
+        { "file": "skill-hub/police-boys-communication-training", "alt": "Communication skills training for police boys" },
+        { "file": "skill-hub/police-dept-children-programme", "alt": "Skill development programme for children of police department staff" },
+        { "file": "skill-hub/police-boys-industrial-visit-2018", "alt": "Police boys on an industrial visit, September 2018" },
+        { "file": "skill-hub/energy-cell-student-visit", "alt": "Energy cell students visiting Sanjay Techno Plast" },
+        { "file": "skill-hub/rasci", "alt": "Session with the Retailers Association's Skill Council of India" },
+        { "file": "skill-hub/startup-weekend-ritesh-mishra", "alt": "Mr. Ritesh Mishra speaking at Startup Weekend" },
+        { "file": "skill-hub/startup-weekend", "alt": "Participants at the MAGIC-GIZ Startup Weekend" },
+        { "file": "skill-hub/skills", "alt": "Hands-on skill training" }
+      ]
+    },
+    {
+      "id": "initiatives-album",
+      "title": "Initiatives",
+      "subtitle": "Conclaves, community work and agreements",
+      "category": "initiative",
+      "cover": "initiatives/lighting-conclave-registration",
+      "photos": [
+        { "file": "initiatives/lighting-conclave-registration", "alt": "A long registration queue at the CMIA lighting and rooftop solar conclave" },
+        { "file": "initiatives/felicitation-minister-bawankule", "alt": "Felicitation of Hon. Minister Shri Bawankule at a CMIA event" },
+        { "file": "initiatives/ngo-donation-arambh-society", "alt": "CMIA representatives handing a donation to Arambh Society" },
+        { "file": "initiatives/jet-airways-umbrella-scheme", "alt": "Signing of the CMIA Jet Airways umbrella scheme for members" },
+        { "file": "initiatives/bamu-university-interaction-2017", "alt": "CMIA and university representatives at the June 2017 interaction" },
+        { "file": "initiatives/suryakumbh-1", "alt": "School students at the SuryaKumbh solar cooking festival" },
+        { "file": "initiatives/suryakumbh-2", "alt": "Solar ovens laid out at the SuryaKumbh festival" },
+        { "file": "initiatives/suryakumbh-3", "alt": "Students cooking with solar ovens at SuryaKumbh" }
+      ]
+    },
+    {
+      "id": "clusters-album",
+      "title": "The clusters",
+      "subtitle": "Seven trades, seven Common Facility Centres",
+      "category": "cluster",
+      "cover": "clusters/auto-components",
+      "photos": [
+        { "file": "clusters/auto-components", "alt": "Auto component manufacturing on a shop floor" },
+        { "file": "clusters/steel-furniture", "alt": "Steel furniture fabrication" },
+        { "file": "clusters/paithani", "alt": "A Paithani sari with its silk and zari weave" },
+        { "file": "clusters/garment", "alt": "Garment stitching work" },
+        { "file": "clusters/truck-body", "alt": "A truck body under construction" },
+        { "file": "clusters/bakery", "alt": "Bakery products" },
+        { "file": "clusters/general-engineering", "alt": "General engineering workshop" }
+      ]
+    },
+    {
+      "id": "bajaj-bhavan",
+      "title": "Bajaj Bhavan",
+      "subtitle": "The chamber's building at Railway Station MIDC",
+      "category": "venue",
+      "cover": "venue/conference-hall",
+      "photos": [
+        { "file": "venue/conference-hall", "alt": "The CMIA conference hall set up with chairs facing a stage" },
+        { "file": "venue/hall-1", "alt": "The conference hall from the rear" },
+        { "file": "venue/hall-2", "alt": "The conference hall seating" },
+        { "file": "venue/hall-3", "alt": "The conference hall stage" },
+        { "file": "venue/function-hall", "alt": "The function hall at Bajaj Bhavan" },
+        { "file": "venue/board-room", "alt": "The board room at Bajaj Bhavan" },
+        { "file": "venue/office", "alt": "The CMIA office" },
+        { "file": "venue/bajaj-bhavan-front", "alt": "The front of Bajaj Bhavan" },
+        { "file": "venue/bajaj-bhavan-side", "alt": "Bajaj Bhavan seen from the side" }
+      ]
+    }
+  ],
+
+  "videos": [],
+  "_videos_note": "The old Video Gallery page rendered an empty table — there were no videos on it. Add entries as { title, youtubeId, date } and the Gallery page will show a Video filter. CMIA's YouTube channel is linked in the footer meanwhile."
+}

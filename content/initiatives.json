@@ -1,0 +1,145 @@
+{
+  "_editing_note": "Named initiatives and programmes. Newest first. `photo` is optional.",
+
+  "initiatives": [
+    {
+      "id": "strive",
+      "title": "STRIVE",
+      "subtitle": "A World Bank project on skills",
+      "summary": "CMIA is the only industry chamber in Maharashtra selected to implement the STRIVE scheme.",
+      "detail": "STRIVE was launched to improve the relevance and efficiency of skill training delivered through ITIs, and to strengthen apprenticeships.",
+      "badge": "Only chamber in Maharashtra",
+      "category": "skill",
+      "photo": null,
+      "_photo_note": "PLACEHOLDER — the old site's STRIVE image (admin/upload_initiatives/1558087568_STRIVE news.JPG) returns 404. Source the press clipping or a programme photograph.",
+      "documents": [
+        "Contract Award Notice (CAN)",
+        "Procurement data format",
+        "Indicative procurement format",
+        "Complaint tracking and disclosure format",
+        "CMIA procurement plan — STRIVE project",
+        "STRIVE grievance form"
+      ],
+      "_documents_note": "These were listed as links on the old Skill Hub page but the files were not reachable. Place the PDFs in public/downloads/strive/ and add a `href` to each entry."
+    },
+    {
+      "id": "essc-mou",
+      "title": "MOU with the Electronics Sector Skill Council",
+      "summary": "Signed for skill development activity — helping CMIA get courses approved to run BTP batches for PCB assembly operators.",
+      "category": "skill",
+      "photo": null,
+      "_photo_note": "PLACEHOLDER — the old site's MOU image returns 404."
+    },
+    {
+      "id": "magic",
+      "title": "MAGIC",
+      "subtitle": "Marathwada Accelerator for Growth and Incubation Council",
+      "summary": "The chamber's incubator, set up to back new ventures in the region. An MOU was signed with NIELIT.",
+      "href": "https://magicincubation.com/",
+      "hrefLabel": "magicincubation.com",
+      "category": "enterprise",
+      "photo": "skill-hub/startup-weekend"
+    },
+    {
+      "id": "bamu-summit",
+      "title": "Joint summit with Dr. Babasaheb Ambedkar Marathwada University",
+      "date": "2017-06-07",
+      "dateLabel": "7 June 2017",
+      "summary": "On technical education and its improvement, held at the university campus, with leading industrialists from the region guiding the discussion.",
+      "category": "institution",
+      "photo": "initiatives/bamu-university-interaction-2017"
+    },
+    {
+      "id": "lighting-conclave",
+      "title": "Lighting, LED and rooftop solar conclave",
+      "date": "2016-08-31",
+      "dateLabel": "31 August 2016",
+      "summary": "Held at the CSMSS college campus and inaugurated by CMIA President Mr. Bagga. The Hon. Energy Minister of Maharashtra, Mr. Bawankule, attended.",
+      "category": "sector",
+      "photo": "initiatives/lighting-conclave-registration"
+    },
+    {
+      "id": "suryakumbh",
+      "title": "SuryaKumbh",
+      "subtitle": "The world's largest solar cooking festival",
+      "date": "2016-01-12",
+      "dateLabel": "12 January 2016",
+      "summary": "Held with Simplified Technologies to promote renewable energy among school students. Each student built a solar oven and cooked lunch in it.",
+      "detail": "The festival entered the Guinness World Records and the Limca Book of Records.",
+      "badge": "Guinness World Record",
+      "category": "community",
+      "photo": "initiatives/suryakumbh-1",
+      "gallery": ["initiatives/suryakumbh-1", "initiatives/suryakumbh-2", "initiatives/suryakumbh-3"],
+      "credit": "Prasad Kokil"
+    },
+    {
+      "id": "jet-airways",
+      "title": "Jet Airways umbrella tie-up",
+      "summary": "An agreement giving CMIA members negotiated terms on air bookings.",
+      "category": "member-benefit",
+      "photo": "initiatives/jet-airways-umbrella-scheme",
+      "_note": "Historical. Jet Airways no longer operates as it did when this agreement was made; kept as part of the record."
+    },
+    {
+      "id": "arambh-donation",
+      "title": "Donation to Arambh Society",
+      "summary": "Part of the chamber's community work.",
+      "category": "community",
+      "photo": "initiatives/ngo-donation-arambh-society"
+    },
+    {
+      "id": "oxygen-rich-midc",
+      "title": "Oxygen Rich MIDC",
+      "summary": "A tree plantation programme across the industrial area.",
+      "category": "community",
+      "photo": null,
+      "_photo_note": "PLACEHOLDER — no photograph on the old site. Worth shooting; a planting day is highly photographable."
+    }
+  ],
+
+  "skillHub": {
+    "name": "Marathwada Skill Hub",
+    "logo": "identity/skill-hub-logo",
+    "quote": "The more we give importance for skill development, the more competent will be our youth.",
+    "summary": "CMIA at the centre, its member companies as the support — a single connecting point for everyone training youth in the region.",
+    "detail": "In the long run the Skill Hub acts as the point of connection for all the key agencies in skills training: industry members, academic institutes and state government agencies.",
+    "belief": "A better world evolves through the combined accomplishments of committed, socially responsive and compassionate organisations focused on Make in India through Skill India.",
+    "contact": {
+      "name": "Mr. Aditya Jawalekar",
+      "phone": "8956976794",
+      "email": "cmiamarathwadaskillshub@gmail.com"
+    },
+    "structure": [
+      "All skill training providers on a single platform",
+      "All CMIA industry members connected and working together",
+      "Identified industry infrastructure used for training",
+      "Marathwada Auto Cluster developed as the basic training centre under the apprenticeship scheme"
+    ],
+    "facilities": [
+      { "title": "Skills mapping", "pictogram": "map-pin" },
+      { "title": "Bridging the gap", "pictogram": "gate" },
+      { "title": "Promoting apprenticeship training", "pictogram": "training" },
+      { "title": "On-job training", "pictogram": "shed" },
+      { "title": "Exposure visits", "pictogram": "globe-route" },
+      { "title": "Career guidance and counselling", "pictogram": "helpdesk" }
+    ],
+    "gallery": [
+      { "photo": "skill-hub/skill-hub-meeting-2018", "caption": "Skill Hub meeting at CMIA", "date": "2018-02-22", "dateLabel": "22 February 2018" },
+      { "photo": "skill-hub/rasci", "caption": "With the Retailers Association's Skill Council of India (RASCI)" },
+      { "photo": "skill-hub/excel-training-2018", "caption": "Excel training", "date": "2018-03-16", "dateLabel": "16 March 2018" },
+      { "photo": "skill-hub/communication-skill-training", "caption": "Communication skills training" },
+      { "photo": "skill-hub/presentation-skill-training", "caption": "Presentation skills training" },
+      { "photo": "skill-hub/police-boys-communication-training", "caption": "Communication skills training for police boys" },
+      { "photo": "skill-hub/police-dept-children-programme", "caption": "Skill development programme for police department children" },
+      { "photo": "skill-hub/police-boys-industrial-visit-2018", "caption": "Industrial visit for police boys", "date": "2018-09-04", "dateLabel": "4 September 2018" },
+      { "photo": "skill-hub/energy-cell-student-visit", "caption": "Energy cell student visit to Sanjay Techno Plast" },
+      { "photo": "skill-hub/startup-weekend-ritesh-mishra", "caption": "Mr. Ritesh Mishra at Startup Weekend" },
+      { "photo": "skill-hub/startup-weekend", "caption": "MAGIC-GIZ Startup Weekend" },
+      { "photo": "skill-hub/skills", "caption": "Skill training in progress" }
+    ],
+    "news": [
+      "Mr. Per of GIZ visits the CMIA BTP training institute at MIT ITI",
+      "Mr. Per of GIZ meets CMIA Skill Hub officials"
+    ]
+  }
+}

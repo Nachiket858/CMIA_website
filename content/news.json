@@ -1,0 +1,59 @@
+{
+  "_editing_note": "Three feeds in one list, separated by `type`: 'circular' (notices to members), 'press' (press coverage and releases), 'publication' (newsletters, magazines, directories). Add newest first. `file` is a path under public/downloads/. Set `membersOnly` to true for anything that should be marked as such.",
+
+  "items": [
+    {
+      "id": "pulse-annual",
+      "type": "publication",
+      "title": "Pulse — annual magazine",
+      "summary": "The chamber's annual magazine.",
+      "file": null,
+      "_file_note": "PLACEHOLDER — the old site linked admin/newsletter/Pulse Annual magazine.pdf, which returns 404. Place the PDF at public/downloads/pulse-annual.pdf and set `file` to '/downloads/pulse-annual.pdf'.",
+      "unavailable": true
+    },
+    {
+      "id": "members-directory",
+      "type": "publication",
+      "title": "CMIA members' directory",
+      "summary": "Released at the hands of Hon. Shri Subhash Desai, Minister for Industries and Mining, at Mumbai.",
+      "file": null,
+      "_file_note": "PLACEHOLDER — recorded on the old CMIA in Action page but never published as a download. Add the current edition if it is available for distribution.",
+      "unavailable": true
+    },
+    {
+      "id": "membership-form",
+      "type": "publication",
+      "title": "Membership application form 2025-26",
+      "summary": "The form, fee schedule, document checklist and bank details.",
+      "file": "https://www.cmia.co.in/images/Membership%20Form_2025-26.pdf",
+      "external": true,
+      "_file_note": "Currently served from the old site. Move the PDF to public/downloads/ and change `file` to '/downloads/membership-form.pdf' when the site goes live."
+    }
+  ],
+
+  "_empty_state_note": "The old site's Circulars, Press Room, Newsletters and Training Programme pages all rendered empty tables — there was no content in them to carry over. The News page therefore shows an honest empty state per feed rather than pretending otherwise. Adding an item here makes it appear immediately.",
+
+  "types": [
+    {
+      "id": "circular",
+      "label": "Circulars",
+      "blurb": "Notices and government notifications circulated to members.",
+      "emptyMessage": "No circulars are published here yet. Members receive government notifications affecting their industry by email and WhatsApp every month.",
+      "pictogram": "circular"
+    },
+    {
+      "id": "press",
+      "label": "Press",
+      "blurb": "Coverage of the chamber's work and its statements to the press.",
+      "emptyMessage": "No press items are published here yet. The chamber's activity is covered regularly in the regional press.",
+      "pictogram": "press"
+    },
+    {
+      "id": "publication",
+      "label": "Publications",
+      "blurb": "Magazines, directories and forms.",
+      "emptyMessage": "No publications are available for download yet.",
+      "pictogram": "publication"
+    }
+  ]
+}

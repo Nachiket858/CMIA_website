@@ -1,0 +1,77 @@
+{
+  "_editing_note": "Bajaj Bhavan and the rooms members can use or book. `capacity` is shown as a figure — keep it a short string.",
+
+  "building": {
+    "name": "Bajaj Bhavan",
+    "address": "P-2, Shri Madhur Bajaj Marg, Railway Station MIDC, Chhatrapati Sambhajinagar 431005",
+    "summary": "The chamber's own building at Railway Station MIDC, with the secretariat on hand and rooms members can use for their own programmes.",
+    "photo": "venue/bajaj-bhavan-front",
+    "_photo_note": "PLACEHOLDER-GRADE — the only exterior photographs on the old site are 310x210 px, too small to use large. A proper exterior shot of Bajaj Bhavan would improve this page and the Contact page considerably. Shoot in the morning with the entrance and signage visible.",
+    "photoLowRes": true
+  },
+
+  "rooms": [
+    {
+      "id": "seminar-hall",
+      "name": "Seminar hall",
+      "capacity": "80+",
+      "capacityLabel": "delegates seated",
+      "photo": "venue/conference-hall",
+      "summary": "Fully furnished, and the room the chamber recommends for a management training programme.",
+      "facilities": [
+        "Multimedia computer available for hire",
+        "SVGA-compatible large-format television for presentations",
+        "Hi-fi sound system with surround sound",
+        "OHP and slide projector on request"
+      ],
+      "bookable": true
+    },
+    {
+      "id": "function-hall",
+      "name": "Function hall",
+      "photo": "venue/function-hall",
+      "summary": "For larger gatherings and chamber functions.",
+      "facilities": [],
+      "bookable": true
+    },
+    {
+      "id": "board-room",
+      "name": "Board room",
+      "photo": "venue/board-room",
+      "summary": "A closed-door meeting room.",
+      "facilities": [],
+      "bookable": true
+    },
+    {
+      "id": "interview-room",
+      "name": "Executive interview room",
+      "photo": null,
+      "summary": "For interviews and small private meetings.",
+      "facilities": [],
+      "bookable": true,
+      "_photo_note": "PLACEHOLDER — no photograph exists. Shoot alongside the board room."
+    }
+  ],
+
+  "officeFacilities": {
+    "summary": "The secretariat and its staff are at members' service.",
+    "items": ["Phone", "Fax", "Internet"],
+    "photo": "venue/office"
+  },
+
+  "gallery": [
+    "venue/conference-hall",
+    "venue/hall-1",
+    "venue/hall-2",
+    "venue/hall-3",
+    "venue/function-hall",
+    "venue/board-room",
+    "venue/office",
+    "venue/bajaj-bhavan-side"
+  ],
+
+  "booking": {
+    "note": "Conference hall booking is handled by the office. Call or email with your date, expected numbers and the equipment you need.",
+    "_note": "The old site had a Conference Hall Booking page with a form that posted to a login-gated backend. Since this site is static, the booking route is the office directly — which is what actually happened anyway. If an online booking form is wanted later, it can post to the same endpoint as the enquiry form."
+  }
+}

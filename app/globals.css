@@ -1,0 +1,823 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   CMIA — "Ink & Brass"
+   ----------------------------------------------------------------------------
+   Every value below is derived from the three colours sampled out of
+   images/cmia-logo.png on the live site:
+
+     #CC9866  the sweeping "C"            hue  29.4°  sat 50%  val  80%
+     #FF6634  the "M" (roofline chevrons) hue  14.8°  sat 80%  val 100%
+     #3398CC  the chevron inside the "A"  hue 200.4°  sat 75%  val  80%
+
+   The surface ramp is hue-locked to 29.4° at low saturation, so the ground
+   reads as warm iron — never grey, never black. Contrast ratios in the
+   comments were computed, not estimated.
+   ========================================================================= */
+
+@theme {
+  /* --- Surfaces: warm iron, hue 29.4°, saturation high enough to READ as
+         warm rather than as a neutral dark. An earlier ramp sat at 20-30%
+         saturation and looked black on a phone, which made the brand hues
+         read as accents sprinkled on a default dark theme. These sit at
+         29-55% so the ground itself is visibly the logo's hue family.  ---- */
+  --color-ink-900: #130e09; /* deepest — hero, footer                       */
+  --color-ink-800: #1b140d; /* page ground                                  */
+  --color-ink-700: #261e15; /* raised panel                                 */
+  --color-ink-600: #342a20; /* raised panel, higher                         */
+  --color-ink-500: #45392e; /* borders on ink                               */
+  --color-ink-400: #594c3f; /* strong border / disabled fill                */
+
+  /* --- Bone: ochre-tinted paper for reading surfaces -------------------- */
+  --color-bone-50: #f9f2eb;
+  --color-bone-100: #f1e7dc; /* the document panel                          */
+  --color-bone-200: #e4d7ca;
+  --color-bone-300: #d1c1b2; /* borders on bone                             */
+
+  /* --- Brand hues, one fixed job each ----------------------------------- */
+  --color-brass: #cc9866; /* institutional: rules, spine, the Roofline   7.7:1 on ink-900 */
+  --color-brass-lift: #e0b579; /*                                      10.3:1 on ink-900 */
+  --color-brass-deep: #7a5326; /* brass as text on bone                  5.6:1 on bone-100 */
+
+  --color-signal: #ff6634; /* ACTION AND NOW ONLY                        6.7:1 on ink-900 */
+  --color-signal-lift: #ff7a4d; /*                                       7.6:1 on ink-900 */
+  --color-signal-deep: #a8380f; /* signal as text on bone                 5.3:1 on bone-100 */
+
+  --color-agri: #3398cc; /* AGRICULTURE AND DATA ONLY                    6.1:1 on ink-900 */
+  --color-agri-lift: #5cb8e6; /* focus ring                              8.8:1 on ink-900 */
+  --color-agri-deep: #1b5e86; /* agri as text on bone                    5.8:1 on bone-100 */
+
+  --color-clay: #8c6e4f; /* recessive borders, muted marks                */
+
+  /* --- Text ------------------------------------------------------------- */
+  --color-text-hi: #f9f0e7; /* on ink-900                              17.0:1 */
+  --color-text-mid: #ccbcad; /* on ink-900                              10.4:1 */
+  --color-text-lo: #9e8c7b; /* on ink-900                               5.9:1 */
+  --color-doc-hi: #241c15; /* on bone                                  13.7:1 */
+  --color-doc-mid: #524336; /* on bone                                   7.8:1 */
+  --color-doc-lo: #756554; /* on bone                                    4.6:1 */
+
+  /* Text that sits on a large brass or bone field. 6.6:1 on brass. */
+  --color-on-brass: #1a0e06;
+
+  /* --- States ----------------------------------------------------------- */
+  --color-success: #6e9b4f;
+  --color-error: #e05238;
+
+  /* --- Chart series ------------------------------------------------------
+     These are the brand hues re-stepped into the dark-mode OKLCH band
+     (L 0.48–0.67, C >= 0.10) — hue held, lightness moved. Verified with the
+     palette validator against the ink-800 surface:
+
+       [#099EDB, #F94F03]  CVD dE 26.0 (protan) · normal 35.2 · both >= 3:1
+
+     TWO SLOTS IS THE LIMIT, and that is a finding rather than a preference.
+     Adding brass as a third series fails hard: brass vs signal measures
+     dE 0.8 under deuteranopia and 10.7 under normal vision — genuinely
+     indistinguishable. Brass therefore never encodes a data series here; it
+     stays the institutional tone (rules, spine, axes, labels).
+
+     A chart needing more than two categories folds to "Other", facets into
+     small multiples, or drops colour encoding and labels its marks directly. */
+  --color-series-1: #099edb; /* agri hue, L 0.66 */
+  --color-series-2: #f94f03; /* signal hue, L 0.66 */
+
+  /* Ordinal 3-step brass ramp — the three eras (ADIA, MIA, CMIA).
+     Validated: monotone L, adjacent dL 0.08, light end 2.99:1 on surface. */
+  --color-era-1: #8e5302;
+  --color-era-2: #ae6703;
+  --color-era-3: #cf7b03;
+
+  /* Recessive chart furniture */
+  --color-axis: #3c3732;
+  --color-grid: #2d2824;
+
+  /* --- Type ------------------------------------------------------------- */
+  --font-display: var(--font-archivo), "Archivo Expanded", "Arial Black",
+    sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  --font-deva: var(--font-mukta), "Nirmala UI", sans-serif;
+
+  /* --- Motion ----------------------------------------------------------- */
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-soft: cubic-bezier(0.65, 0, 0.35, 1);
+  /* A gentle overshoot for things that should feel physical (menus, chips). */
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.64, 1);
+
+  --dur-fast: 140ms;
+  --dur-base: 240ms;
+  --dur-slow: 420ms;
+  --dur-reveal: 620ms;
+
+  /* --- Radius ------------------------------------------------------------
+     Small and consistent. The site's corner language is the gable chamfer;
+     radii here are for the things a chamfer would look wrong on. */
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* --- Elevation ---------------------------------------------------------
+     Shadows are warm, not black. On a ground this warm a neutral black shadow
+     reads as dirt; these are tinted with the ground's own hue so raised
+     surfaces look lit rather than smudged. Each level layers a tight contact
+     shadow under a wide soft one, which is what makes elevation read as
+     elevation rather than as a blur. */
+  --shadow-sm: 0 1px 2px rgba(10, 6, 3, 0.4), 0 2px 6px rgba(10, 6, 3, 0.28);
+  --shadow-md:
+    0 2px 4px rgba(10, 6, 3, 0.42), 0 8px 20px -4px rgba(10, 6, 3, 0.4);
+  --shadow-lg:
+    0 4px 8px rgba(10, 6, 3, 0.44), 0 18px 40px -8px rgba(10, 6, 3, 0.48);
+  --shadow-xl:
+    0 8px 16px rgba(10, 6, 3, 0.46), 0 32px 64px -12px rgba(10, 6, 3, 0.55);
+
+  /* Warm glows for the two interactive hues. Used on hover, never at rest. */
+  --glow-brass: 0 0 0 1px rgba(204, 152, 102, 0.28), 0 6px 24px -6px rgba(204, 152, 102, 0.3);
+  --glow-signal: 0 6px 22px -6px rgba(255, 102, 52, 0.45);
+}
+
+/* ============================================================================
+   Base
+   ========================================================================= */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-ink-800);
+    color: var(--color-text-mid);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    /* cv05: straight-tailed l, so "1" and "l" stop competing in a fee table.
+       ss03: a rounder single-storey g, which sits better beside Archivo. */
+    font-feature-settings: "cv05" 1, "ss03" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /*
+    Display face, in tight wide caps. Tracking tightens as size grows — at
+    display sizes a uniform letter-spacing reads loose, and at small sizes it
+    reads cramped, so each step gets its own.
+  */
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    color: var(--color-text-hi);
+    text-wrap: balance;
+    font-synthesis-weight: none;
+  }
+
+  h1 {
+    letter-spacing: -0.032em;
+    line-height: 0.98;
+  }
+
+  h2 {
+    letter-spacing: -0.026em;
+    line-height: 1.04;
+  }
+
+  h3,
+  h4 {
+    letter-spacing: -0.014em;
+    line-height: 1.2;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Keep hyphens off headings, where a broken word costs more than a ragged
+     edge, and let long words break rather than overflow at 360px. */
+  h1,
+  h2,
+  h3 {
+    hyphens: none;
+    overflow-wrap: break-word;
+  }
+
+  a,
+  button,
+  summary,
+  input,
+  select,
+  textarea {
+    color: inherit;
+  }
+
+  /* Anything scrolled to via an in-page link clears the sticky header. */
+  :target {
+    scroll-margin-top: 6rem;
+  }
+
+  section[id],
+  [id] {
+    scroll-margin-top: 5rem;
+  }
+
+  /* Numerals must align in the fee table and every chart axis. */
+  table,
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* One focus treatment for the whole site. 8.8:1 on ink. */
+  :focus-visible {
+    outline: 2px solid var(--color-agri-lift);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Devanagari copy opts in via lang; the font only loads where it is used. */
+  :lang(mr),
+  :lang(hi) {
+    font-family: var(--font-deva);
+  }
+
+  ::selection {
+    background: var(--color-signal);
+    color: var(--color-ink-900);
+  }
+}
+
+/* ============================================================================
+   Utilities
+   ========================================================================= */
+
+@utility panel {
+  /* The bone "document" — anything with more than ~40 words sits on this. */
+  background-color: var(--color-bone-100);
+  color: var(--color-doc-mid);
+}
+
+/* ---------------------------------------------------------------- surfaces */
+
+/**
+ * The raised surface used by every card on the site.
+ *
+ * Three things stacked, which is what separates a surface that looks lit from
+ * a box with a border: a top-lit gradient so the surface has a light source, a
+ * 1px border, and a hairline highlight along the top edge only.
+ */
+@utility surface {
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    color-mix(in oklab, var(--color-ink-600) 55%, transparent),
+    color-mix(in oklab, var(--color-ink-700) 70%, transparent)
+  );
+  border: 1px solid var(--color-ink-500);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform var(--dur-base) var(--ease-out-expo),
+    box-shadow var(--dur-base) var(--ease-out-expo),
+    border-color var(--dur-base) var(--ease-out-expo);
+}
+
+/* The top-edge highlight. Kept off elements with a clip-path, where a
+   pseudo-element edge would be cut mid-stroke. */
+@utility surface-lit {
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      color-mix(in oklab, var(--color-brass) 35%, transparent),
+      transparent
+    );
+    pointer-events: none;
+  }
+}
+
+/** Hover for anything interactive and card-shaped. */
+@utility surface-hover {
+  &:hover {
+    transform: translate3d(0, -2px, 0);
+    border-color: color-mix(in oklab, var(--color-brass) 45%, transparent);
+    box-shadow: var(--shadow-lg);
+  }
+  &:active {
+    transform: translate3d(0, 0, 0);
+    transition-duration: var(--dur-fast);
+  }
+}
+
+/**
+ * Glass. Used only on the header, which is the one element that sits over
+ * moving content and needs to stay legible without becoming a solid bar.
+ */
+@utility glass {
+  background-color: color-mix(in oklab, var(--color-ink-900) 72%, transparent);
+  backdrop-filter: blur(14px) saturate(1.4);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+}
+
+/* Fallback for browsers without backdrop-filter: go opaque rather than
+   leaving text over whatever is scrolling underneath. */
+@supports not (backdrop-filter: blur(1px)) {
+  .glass {
+    background-color: var(--color-ink-900);
+  }
+}
+
+/* ------------------------------------------------------------ interactions */
+
+/** A link that draws its own underline on hover. */
+@utility link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  transition: background-size var(--dur-base) var(--ease-out-expo);
+  &:hover {
+    background-size: 100% 1px;
+  }
+}
+
+/** Press feedback for buttons. Small, fast, and on every one of them. */
+@utility pressable {
+  transition:
+    transform var(--dur-fast) var(--ease-out-expo),
+    background-color var(--dur-base) var(--ease-out-expo),
+    border-color var(--dur-base) var(--ease-out-expo),
+    box-shadow var(--dur-base) var(--ease-out-expo),
+    color var(--dur-base) var(--ease-out-expo);
+  &:active {
+    transform: scale(0.975);
+  }
+}
+
+/* Media that scales inside its frame on hover. The frame clips; the image
+   moves. Transform-only, so it stays on the compositor. */
+@utility media-zoom {
+  transition: transform 900ms var(--ease-out-expo);
+  will-change: transform;
+  .group:hover & {
+    transform: scale(1.045);
+  }
+}
+
+/* ------------------------------------------------------------------ forms */
+
+/**
+ * Every text input, select and textarea on the site.
+ *
+ * Rest state is quiet — a hairline border on the ink field. Focus lifts it
+ * with the same agri glow the rest of the site uses for keyboard focus, so a
+ * field mid-edit reads as distinctly "active" rather than merely "clicked".
+ * The border itself also carries state (ink-500 → brass/50 on hover →
+ * agri-lift on focus → error on validation) so colour does part of the work
+ * before a screen reader even reaches the error text.
+ */
+@utility field {
+  width: 100%;
+  background-color: var(--color-ink-800);
+  border: 1px solid var(--color-ink-500);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 0.9rem;
+  font-size: 0.97rem;
+  color: var(--color-text-hi);
+  transition:
+    border-color var(--dur-base) var(--ease-out-expo),
+    box-shadow var(--dur-base) var(--ease-out-expo),
+    background-color var(--dur-base) var(--ease-out-expo);
+
+  &::placeholder {
+    color: var(--color-text-lo);
+    opacity: 0.75;
+  }
+
+  &:hover:not(:focus):not([aria-invalid="true"]) {
+    border-color: color-mix(in oklab, var(--color-brass) 50%, var(--color-ink-500));
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: var(--color-agri-lift);
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-agri-lift) 22%, transparent);
+    background-color: var(--color-ink-700);
+  }
+
+  &[aria-invalid="true"] {
+    border-color: var(--color-error);
+  }
+
+  &[aria-invalid="true"]:focus-visible {
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-error) 22%, transparent);
+  }
+}
+
+/** A pill-style choice: radio/checkbox dressed as a button. */
+@utility choice-pill {
+  cursor: pointer;
+  border: 1px solid var(--color-ink-500);
+  border-radius: var(--radius-sm);
+  transition:
+    border-color var(--dur-base) var(--ease-out-expo),
+    background-color var(--dur-base) var(--ease-out-expo),
+    color var(--dur-base) var(--ease-out-expo),
+    transform var(--dur-fast) var(--ease-out-expo);
+
+  &:hover {
+    border-color: color-mix(in oklab, var(--color-brass) 55%, var(--color-ink-500));
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+  &:has(input:focus-visible) {
+    outline: 2px solid var(--color-agri-lift);
+    outline-offset: 2px;
+  }
+  &:has(input:checked) {
+    border-color: var(--color-signal);
+    background-color: var(--color-signal);
+    color: var(--color-ink-900);
+    font-weight: 600;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  20%,
+  60% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  80% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.shake {
+  animation: shake 420ms var(--ease-in-out-soft);
+}
+
+@keyframes check-pop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.check-pop {
+  animation: check-pop 460ms var(--ease-spring) both;
+}
+
+@utility measure {
+  /* Caps line length so no paragraph can sprawl. */
+  max-width: 58ch;
+}
+
+@utility measure-tight {
+  max-width: 44ch;
+}
+
+/* Screen-reader-only, but focusable (skip link). */
+@utility sr-only-focusable {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ============================================================================
+   Shape language
+
+   The logo's letterforms are gables. The gable is therefore the site's shape,
+   not the rectangle: cards are cut at the top-left on the pitch of a roof, and
+   the hero's panels are full house-pentagons.
+   ========================================================================= */
+
+@utility gable-cut {
+  /* A roof pitch taken off the top-left corner. Subtle at card scale — it
+     reads as a chamfer until you notice every card has it. */
+  clip-path: polygon(22px 0, 100% 0, 100% 100%, 0 100%, 0 22px);
+}
+
+@utility gable-cut-lg {
+  clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%, 0 40px);
+}
+
+@utility gable-panel {
+  /* The full shed profile: a shallow pitched roof over a tall wall.
+     The pitch is deliberately low — at 34% the panels read as pyramids
+     rather than sheds, and the photograph inside loses its subject to the
+     taper. 18% keeps the roof legible and the wall usable. */
+  clip-path: polygon(50% 0, 100% 18%, 100% 100%, 0 100%, 0 18%);
+}
+
+/* ============================================================================
+   Motion — every animation here is disabled wholesale further down.
+   ========================================================================= */
+
+@keyframes draw-ridge {
+  from {
+    stroke-dashoffset: var(--ridge-length, 2000);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* The hero sequence ------------------------------------------------------- */
+
+/* Each gable grows up out of the baseline, like a shed going up. */
+@keyframes gable-raise {
+  from {
+    transform: translate3d(0, 18%, 0) scaleY(0.82);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0) scaleY(1);
+    opacity: 1;
+  }
+}
+
+/* Headline lines wipe up from behind their own baseline. */
+@keyframes line-in {
+  from {
+    transform: translate3d(0, 105%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes sweep {
+  from {
+    transform: translate3d(-101%, 0, 0);
+  }
+  to {
+    transform: translate3d(101%, 0, 0);
+  }
+}
+
+.ridge-draw {
+  stroke-dasharray: var(--ridge-length, 2000);
+  animation: draw-ridge 900ms var(--ease-out-quint) forwards;
+}
+
+.hero-gable {
+  transform-origin: 50% 100%;
+  animation: gable-raise 900ms var(--ease-out-quint) both;
+  animation-delay: var(--d, 0ms);
+}
+
+/* A brass light passes across the roofline once, as the last beat. */
+.hero-sweep {
+  animation: sweep 1500ms cubic-bezier(0.4, 0, 0.2, 1) 900ms both;
+}
+
+.hero-line {
+  display: block;
+  animation: line-in 820ms var(--ease-out-quint) both;
+  animation-delay: var(--d, 0ms);
+}
+
+.hero-fade {
+  animation: rise 700ms var(--ease-out-quint) both;
+  animation-delay: var(--d, 0ms);
+}
+
+/* Scroll reveal. Elements start hidden only when JS is present to reveal them,
+   so a no-JS visitor sees everything. */
+.js .reveal {
+  opacity: 0;
+}
+
+.js .reveal.is-in {
+  animation: rise var(--dur-reveal) var(--ease-out-expo) forwards;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
+/* ---------------------------------------------------------------- page load */
+
+/* Route transition. A short settle on the incoming page rather than a
+   cross-fade — a cross-fade needs both trees alive at once, which on a static
+   export costs more than it returns. */
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 6px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.page-in {
+  animation: page-in 380ms var(--ease-out-expo) both;
+}
+
+/* ------------------------------------------------------------- menus, popups */
+
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -6px, 0) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.menu-in {
+  transform-origin: top left;
+  animation: menu-in 200ms var(--ease-spring) both;
+}
+
+@keyframes sheet-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.sheet-in {
+  animation: sheet-in 260ms var(--ease-out-expo) both;
+}
+
+@keyframes overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.overlay-in {
+  animation: overlay-in 200ms linear both;
+}
+
+/* Disclosure panels open by height, which cannot be interpolated from `auto`
+   without JS. `interpolate-size` does it in CSS where supported and is simply
+   ignored where it is not. */
+@supports (interpolate-size: allow-keywords) {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+}
+
+/* -------------------------------------------------------------- loading */
+
+/* Images fade up as they decode, so a slow connection shows a calm surface
+   filling in rather than a hard pop. */
+@keyframes img-in {
+  from {
+    opacity: 0;
+    transform: scale(1.015);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.img-fade {
+  animation: img-in 520ms var(--ease-out-expo) both;
+}
+
+/* The skeleton used while a heavy image is still on the wire. */
+@keyframes shimmer {
+  from {
+    background-position: -160% 0;
+  }
+  to {
+    background-position: 260% 0;
+  }
+}
+
+.skeleton {
+  background-color: var(--color-ink-700);
+  background-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in oklab, var(--color-brass) 9%, transparent) 45%,
+    transparent 90%
+  );
+  background-size: 220% 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+
+/* ============================================================================
+   Reduced motion — honoured completely: final states, no transitions.
+   ========================================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .ridge-draw {
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+  }
+
+  .js .reveal,
+  .js .reveal.is-in,
+  .hero-gable,
+  .hero-line,
+  .hero-fade,
+  .page-in,
+  .menu-in,
+  .sheet-in,
+  .overlay-in,
+  .img-fade,
+  .shake,
+  .check-pop {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  /* Hover lift and image zoom are movement for its own sake here. */
+  .surface-hover:hover,
+  .pressable:active {
+    transform: none;
+  }
+
+  .media-zoom,
+  .group:hover .media-zoom {
+    transform: none;
+  }
+
+  /* Decoration that only exists to move: it simply does not run. */
+  .hero-sweep,
+  .skeleton {
+    display: none;
+    animation: none;
+  }
+}
+
+/* Print: the ink ground would waste a cartridge and a bylaw needs to print. */
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

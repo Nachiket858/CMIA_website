@@ -1,0 +1,77 @@
+{
+  "_editing_note": "The current term's leadership. To swap a person: change `name`, and set `photo` to the matching file under assets/source/people/ (drop the folder and extension, e.g. \"people/anuj-bansal\"). Set photo to null if there is no portrait yet — the card falls back to initials rather than showing a broken image. Run `npm run images` after adding a new photo.",
+
+  "term": "2026-27",
+  "_term_source": "Office bearers as listed on the old CMIA homepage and CMIA Management page.",
+
+  "presidentsMessage": {
+    "byName": "Shri Utsav Machhar",
+    "byRole": "President, 2025-26",
+    "term": "2025-2026",
+    "greeting": "Namashkar",
+    "body": [
+      "Thank you for placing your confidence in my abilities to lead the Chamber this year.",
+      "Our focus this year is on infrastructure and skill development — key to sustaining Chhatrapati Sambhajinagar's industrial growth. CMIA stays committed to innovation, entrepreneurship, and making our city investment ready."
+    ],
+    "photo": "people/utsav-machhar",
+    "isArchived": true,
+    "_flag": "PLACEHOLDER STATUS — this is the 2025-26 message, still live on the old site under the President's Message page. The 2026-27 president (Shri Atharveshraj Nandawat) has not published one. Replace `byName`, `byRole`, `term`, `body` and `photo` when the new message arrives, and set isArchived to false."
+  },
+
+  "groups": [
+    {
+      "id": "office-bearers",
+      "title": "Office Bearers",
+      "blurb": "Elected annually by the general body.",
+      "people": [
+        { "name": "Shri Atharveshraj Nandawat", "role": "President", "photo": "people/atharveshraj-nandawat", "lead": true },
+        { "name": "Shri Mihir Soundalgekar", "role": "Vice President", "photo": "people/mihir-soundalgekar" },
+        { "name": "Shri Ajinkya Save", "role": "Honorary Secretary", "photo": "people/ajinkya-save" },
+        { "name": "Shri Saurabh Chhallani", "role": "Joint Secretary", "photo": "people/saurabh-chhallani" },
+        { "name": "Smt. Soham Kotak", "role": "Treasurer", "photo": "people/soham-kotak" },
+        { "name": "Shri Rushikesh Jaju", "role": "Joint Treasurer", "photo": "people/rushikesh-jaju" },
+        { "name": "Shri Utsav Machhar", "role": "Immediate Past President", "photo": "people/utsav-machhar" }
+      ]
+    },
+    {
+      "id": "zones",
+      "title": "Zones",
+      "blurb": "Three zones cover the chamber's territory, each with a head and a co-chair.",
+      "paired": true,
+      "people": [
+        { "name": "Shri Harshit Modani", "role": "Zone Head — Waluj", "photo": "people/harshit-modani", "zone": "waluj" },
+        { "name": "Shri Anand Modani", "role": "Co-Chair — Waluj", "photo": "people/anand-modani", "zone": "waluj", "isCoChair": true },
+        { "name": "Shri Vikrant Bhale", "role": "Zone Head — AURIC", "photo": "people/vikrant-bhale", "zone": "auric", "_note": "Listed as 'Dr Vikrant Bhale' on the portrait file and 'Shri Vikrant Bhale' in the management list." },
+        { "name": "Shri Rohit Dashrathi", "role": "Co-Chair — AURIC", "photo": "people/rohit-dashrathi", "zone": "auric", "isCoChair": true },
+        { "name": "Shri Anuj Bansal", "role": "Zone Head — Rest of Marathwada", "photo": "people/anuj-bansal", "zone": "rest" },
+        { "name": "Shri Yashraj Peeti", "role": "Co-Chair — Rest of Marathwada", "photo": "people/yashraj-peety", "zone": "rest", "isCoChair": true }
+      ]
+    },
+    {
+      "id": "cells",
+      "title": "Committees & Cells",
+      "blurb": "Standing cells that carry the chamber's work between meetings.",
+      "paired": true,
+      "people": [
+        { "name": "Shri Rishikesh Gaoli", "role": "Head — Government Relations", "photo": "people/rishikesh-gaoli", "cell": "government-relations" },
+        { "name": "Shri Mukund Soni", "role": "Co-Chair — Government Relations", "photo": "people/mukund-soni", "cell": "government-relations", "isCoChair": true },
+        { "name": "Shri Ravish Soni", "role": "Head — Business Facilitation Cell", "photo": "people/ravish-soni", "cell": "business-facilitation" },
+        { "name": "Shri Amol Mohite", "role": "Co-Chair — Business Facilitation Cell", "photo": "people/amol-mohite", "cell": "business-facilitation", "isCoChair": true },
+        { "name": "Shri Ankit Kale", "role": "Head — Skill Development Cell", "photo": "people/ankit-kale", "cell": "skill-development" },
+        { "name": "Shri Aniket Patil", "role": "Co-Chair — Skill Development Cell", "photo": "people/aniket-patil", "cell": "skill-development", "isCoChair": true },
+        { "name": "Smt Utkarsha Patil", "role": "Head — Innovation & Technology Cell", "photo": "people/utkarsha-patil", "cell": "innovation-technology" },
+        { "name": "Shri Priyank Chopra", "role": "Co-Chair — Innovation & Technology", "photo": "people/priyank-chopra", "cell": "innovation-technology", "isCoChair": true },
+        { "name": "Smt Gauri Mirashi", "role": "Head — Women Leadership Forum", "photo": "people/gauri-mirashi", "cell": "women-leadership" }
+      ]
+    }
+  ],
+
+  "secretariat": [
+    {
+      "name": "Marathwada Skill Hub",
+      "contactName": "Mr. Aditya Jawalekar",
+      "phone": "8956976794",
+      "email": "cmiamarathwadaskillshub@gmail.com"
+    }
+  ]
+}
